@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict LnU09vq2fJZe0BAnzBI7D6EjZgGgJdjthOUPA9HVwxG66TZdlM4EgLEzNZblRjX
+-- \restrict 9Fam8NM6P9BFI4rbI091r9KR6MOHEMMnceFc5ZEPsiTTiBcNgONkusLVMgr1bfm
 
 -- Dumped from database version 17.4
 -- Dumped by pg_dump version 17.6
@@ -2082,6 +2082,9 @@ COPY "auth"."audit_log_entries" ("instance_id", "id", "payload", "created_at", "
 00000000-0000-0000-0000-000000000000	52b69771-4523-4bcc-affa-7ce054083574	{"action":"token_revoked","actor_id":"027b9013-2b30-48bf-91d4-03f79fa74f6a","actor_username":"fernando@genesisx.com.br","actor_via_sso":false,"log_type":"token"}	2025-09-12 04:08:56.765139+00	
 00000000-0000-0000-0000-000000000000	9ae26400-4327-4e97-b25e-71e0493ff930	{"action":"token_refreshed","actor_id":"3d3ce7d8-785a-4927-a028-57e295784402","actor_username":"1este@teste.com","actor_via_sso":false,"log_type":"token"}	2025-10-17 19:57:16.727309+00	
 00000000-0000-0000-0000-000000000000	d30c2771-8043-4447-8c14-ca3a203140ca	{"action":"token_revoked","actor_id":"3d3ce7d8-785a-4927-a028-57e295784402","actor_username":"1este@teste.com","actor_via_sso":false,"log_type":"token"}	2025-10-17 19:57:16.750357+00	
+00000000-0000-0000-0000-000000000000	51e2e6fe-6987-42ed-a64a-5c2282863682	{"action":"login","actor_id":"11cf6cb0-de2b-4e1c-a9df-b8cb1a9c1000","actor_username":"superadmin@sistema.com","actor_via_sso":false,"log_type":"account","traits":{"provider":"email"}}	2025-10-24 13:39:27.732236+00	
+00000000-0000-0000-0000-000000000000	9b168d26-d344-4366-a327-2b3de8ad1e29	{"action":"user_signedup","actor_id":"e2ded763-40c6-4219-bf77-99b0e9edca9a","actor_username":"servingsollutions777@gmail.com","actor_via_sso":false,"log_type":"team","traits":{"provider":"email"}}	2025-10-24 18:47:52.181706+00	
+00000000-0000-0000-0000-000000000000	68bf7d42-5ab7-4c03-90f8-b658f2ee9d4f	{"action":"login","actor_id":"e2ded763-40c6-4219-bf77-99b0e9edca9a","actor_username":"servingsollutions777@gmail.com","actor_via_sso":false,"log_type":"account","traits":{"provider":"email"}}	2025-10-24 18:47:52.199733+00	
 00000000-0000-0000-0000-000000000000	b4b9fab2-0ded-4df1-adfb-6f9a9dc44cae	{"action":"user_deleted","actor_id":"00000000-0000-0000-0000-000000000000","actor_username":"service_role","actor_via_sso":false,"log_type":"team","traits":{"user_email":"danilobr@gmail.com","user_id":"85d987c8-d61f-4e56-95bc-5435b18f09b2","user_phone":""}}	2025-09-11 22:44:54.924514+00	
 00000000-0000-0000-0000-000000000000	686041c3-b0e7-4212-988e-7c1081045698	{"action":"user_deleted","actor_id":"00000000-0000-0000-0000-000000000000","actor_username":"service_role","actor_via_sso":false,"log_type":"team","traits":{"user_email":"danilokavodelo@gmail.com","user_id":"d8a934c5-c857-4589-adf5-5436a9e10cb5","user_phone":""}}	2025-09-11 22:44:54.948615+00	
 00000000-0000-0000-0000-000000000000	55c722ab-4b21-4077-a7a8-bf66d9898510	{"action":"user_deleted","actor_id":"00000000-0000-0000-0000-000000000000","actor_username":"service_role","actor_via_sso":false,"log_type":"team","traits":{"user_email":"afiliado@genesisx.com.br","user_id":"ada99907-3a47-4ca4-9226-a03cd8d0f1bc","user_phone":""}}	2025-09-11 22:44:55.00737+00	
@@ -2103,6 +2106,10 @@ COPY "auth"."audit_log_entries" ("instance_id", "id", "payload", "created_at", "
 00000000-0000-0000-0000-000000000000	cde7786a-a942-4683-9991-6d09c852731a	{"action":"token_revoked","actor_id":"027b9013-2b30-48bf-91d4-03f79fa74f6a","actor_username":"fernando@genesisx.com.br","actor_via_sso":false,"log_type":"token"}	2025-09-12 03:25:50.50937+00	
 00000000-0000-0000-0000-000000000000	054ca820-b1d0-4dc0-8aba-cced05f7374d	{"action":"token_refreshed","actor_id":"bf9d20ea-6ceb-418b-98f8-cdbec80ba003","actor_username":"admin@empresa.com","actor_via_sso":false,"log_type":"token"}	2025-10-17 19:59:21.592722+00	
 00000000-0000-0000-0000-000000000000	79d36b17-3d26-4ae7-8793-09ebad7eb909	{"action":"token_revoked","actor_id":"bf9d20ea-6ceb-418b-98f8-cdbec80ba003","actor_username":"admin@empresa.com","actor_via_sso":false,"log_type":"token"}	2025-10-17 19:59:21.601683+00	
+00000000-0000-0000-0000-000000000000	033aedb5-59c7-48e7-9eb6-0cd130382759	{"action":"token_refreshed","actor_id":"11cf6cb0-de2b-4e1c-a9df-b8cb1a9c1000","actor_username":"superadmin@sistema.com","actor_via_sso":false,"log_type":"token"}	2025-10-24 16:48:19.941777+00	
+00000000-0000-0000-0000-000000000000	67e6beaf-a4c0-41b9-a4cc-07d9dfdeeb12	{"action":"token_revoked","actor_id":"11cf6cb0-de2b-4e1c-a9df-b8cb1a9c1000","actor_username":"superadmin@sistema.com","actor_via_sso":false,"log_type":"token"}	2025-10-24 16:48:19.967002+00	
+00000000-0000-0000-0000-000000000000	c65d5d40-c637-4f64-ac2d-2bd556987099	{"action":"token_refreshed","actor_id":"e2ded763-40c6-4219-bf77-99b0e9edca9a","actor_username":"servingsollutions777@gmail.com","actor_via_sso":false,"log_type":"token"}	2025-10-25 00:25:00.953285+00	
+00000000-0000-0000-0000-000000000000	e88175c7-8352-4292-bd3a-822d916e0d94	{"action":"token_revoked","actor_id":"e2ded763-40c6-4219-bf77-99b0e9edca9a","actor_username":"servingsollutions777@gmail.com","actor_via_sso":false,"log_type":"token"}	2025-10-25 00:25:00.97621+00	
 00000000-0000-0000-0000-000000000000	19f38896-74e5-4018-94a9-806f4cf0ce8b	{"action":"user_deleted","actor_id":"00000000-0000-0000-0000-000000000000","actor_username":"service_role","actor_via_sso":false,"log_type":"team","traits":{"user_email":"servingsolutions777@gmail.com","user_id":"b6a229b5-124e-4048-a8b3-ae2532feceb3","user_phone":""}}	2025-09-11 22:44:54.965855+00	
 00000000-0000-0000-0000-000000000000	b72d5be6-4447-4466-8950-3abaf2a31876	{"action":"login","actor_id":"11cf6cb0-de2b-4e1c-a9df-b8cb1a9c1000","actor_username":"superadmin@sistema.com","actor_via_sso":false,"log_type":"account","traits":{"provider":"email"}}	2025-09-11 22:50:28.316482+00	
 00000000-0000-0000-0000-000000000000	0d5d9566-e7b9-4d18-bcfc-8c48c06b9b3d	{"action":"user_signedup","actor_id":"6b559ac2-c1d8-412d-ab2c-c877f170557c","actor_username":"daniloalveskavod@gmail.com","actor_via_sso":false,"log_type":"team","traits":{"provider":"email"}}	2025-09-11 23:35:43.303849+00	
@@ -2127,6 +2134,10 @@ COPY "auth"."audit_log_entries" ("instance_id", "id", "payload", "created_at", "
 00000000-0000-0000-0000-000000000000	e8b673af-fef5-4676-b82e-7028e138ba52	{"action":"login","actor_id":"3d3ce7d8-785a-4927-a028-57e295784402","actor_username":"1este@teste.com","actor_via_sso":false,"log_type":"account","traits":{"provider":"email"}}	2025-10-10 23:18:39.955384+00	
 00000000-0000-0000-0000-000000000000	c6a06730-d300-44a9-8013-21ce5ab7518e	{"action":"login","actor_id":"3d3ce7d8-785a-4927-a028-57e295784402","actor_username":"1este@teste.com","actor_via_sso":false,"log_type":"account","traits":{"provider":"email"}}	2025-10-10 23:18:44.259559+00	
 00000000-0000-0000-0000-000000000000	1f39c8c9-137b-4324-a95a-48a4ad33f33f	{"action":"login","actor_id":"3d3ce7d8-785a-4927-a028-57e295784402","actor_username":"1este@teste.com","actor_via_sso":false,"log_type":"account","traits":{"provider":"email"}}	2025-10-18 19:45:13.787574+00	
+00000000-0000-0000-0000-000000000000	6220e771-86c7-46ed-845b-a9318914455c	{"action":"token_refreshed","actor_id":"11cf6cb0-de2b-4e1c-a9df-b8cb1a9c1000","actor_username":"superadmin@sistema.com","actor_via_sso":false,"log_type":"token"}	2025-10-24 18:25:54.87998+00	
+00000000-0000-0000-0000-000000000000	318b6a35-dca7-4169-a16e-96513171724f	{"action":"token_revoked","actor_id":"11cf6cb0-de2b-4e1c-a9df-b8cb1a9c1000","actor_username":"superadmin@sistema.com","actor_via_sso":false,"log_type":"token"}	2025-10-24 18:25:54.89097+00	
+00000000-0000-0000-0000-000000000000	c4c84bef-663c-4f50-96f9-e3961e917419	{"action":"token_refreshed","actor_id":"e2ded763-40c6-4219-bf77-99b0e9edca9a","actor_username":"servingsollutions777@gmail.com","actor_via_sso":false,"log_type":"token"}	2025-10-25 01:23:39.553894+00	
+00000000-0000-0000-0000-000000000000	1baabd04-06bc-427a-9258-1455dca73e91	{"action":"token_revoked","actor_id":"e2ded763-40c6-4219-bf77-99b0e9edca9a","actor_username":"servingsollutions777@gmail.com","actor_via_sso":false,"log_type":"token"}	2025-10-25 01:23:39.562439+00	
 \.
 
 
@@ -2143,12 +2154,13 @@ COPY "auth"."flow_state" ("id", "user_id", "auth_code", "code_challenge_method",
 --
 
 COPY "auth"."users" ("instance_id", "id", "aud", "role", "email", "encrypted_password", "email_confirmed_at", "invited_at", "confirmation_token", "confirmation_sent_at", "recovery_token", "recovery_sent_at", "email_change_token_new", "email_change", "email_change_sent_at", "last_sign_in_at", "raw_app_meta_data", "raw_user_meta_data", "is_super_admin", "created_at", "updated_at", "phone", "phone_confirmed_at", "phone_change", "phone_change_token", "phone_change_sent_at", "email_change_token_current", "email_change_confirm_status", "banned_until", "reauthentication_token", "reauthentication_sent_at", "is_sso_user", "deleted_at", "is_anonymous") FROM stdin;
-00000000-0000-0000-0000-000000000000	11cf6cb0-de2b-4e1c-a9df-b8cb1a9c1000	authenticated	authenticated	superadmin@sistema.com	$2a$10$ORtaDdYM29r1TLyo.nRMaOgg.F0GWeBWTlyIAUDq7RJ2.CON9r/s.	2025-06-22 01:25:41.937486+00	\N		\N		\N			\N	2025-09-12 00:11:19.236472+00	{"provider": "email", "providers": ["email"]}	{"name": "Super Admin", "email_verified": true}	\N	2025-06-22 01:25:41.917945+00	2025-09-12 00:11:19.244139+00	\N	\N			\N		0	\N		\N	f	\N	f
 00000000-0000-0000-0000-000000000000	bf9d20ea-6ceb-418b-98f8-cdbec80ba003	authenticated	authenticated	admin@empresa.com	$2a$10$kF1cBkzywSPO9RqdgoTjMeX0YSrYnDG3Z6tRXmTwoQjfyyInV96u.	2025-06-22 01:25:42.132818+00	\N		\N		\N			\N	2025-07-04 22:13:53.0475+00	{"provider": "email", "providers": ["email"]}	{"name": "Admin da Empresa", "email_verified": true}	\N	2025-06-22 01:25:42.128946+00	2025-10-17 19:59:21.618622+00	\N	\N			\N		0	\N		\N	f	\N	f
 00000000-0000-0000-0000-000000000000	3d3ce7d8-785a-4927-a028-57e295784402	authenticated	authenticated	1este@teste.com	$2a$10$By3.Tw.M8iCDp.0vSMEpg.KImfg9nuFVe4.QnkO.S5P0eru6RnVE6	2025-10-10 23:18:39.948933+00	\N		\N		\N			\N	2025-10-18 19:45:13.808753+00	{"provider": "email", "providers": ["email"]}	{"sub": "3d3ce7d8-785a-4927-a028-57e295784402", "name": "teste", "email": "1este@teste.com", "userType": "empresa", "email_verified": true, "phone_verified": false}	\N	2025-10-10 23:18:39.919864+00	2025-10-18 19:45:13.849349+00	\N	\N			\N		0	\N		\N	f	\N	f
 00000000-0000-0000-0000-000000000000	6b559ac2-c1d8-412d-ab2c-c877f170557c	authenticated	authenticated	daniloalveskavod@gmail.com	$2a$10$1DBzf1wOZ.bbU0LdyEFMiugAi9i2amkpkwZUyNjWMKrEuTP1bWNli	2025-09-11 23:35:43.311077+00	\N		\N		\N			\N	2025-09-12 00:57:29.260311+00	{"provider": "email", "providers": ["email"]}	{"sub": "6b559ac2-c1d8-412d-ab2c-c877f170557c", "name": "danilo alves", "email": "daniloalveskavod@gmail.com", "email_verified": true, "phone_verified": false}	\N	2025-09-11 23:35:43.258374+00	2025-09-12 01:55:59.352027+00	\N	\N			\N		0	\N		\N	f	\N	f
+00000000-0000-0000-0000-000000000000	11cf6cb0-de2b-4e1c-a9df-b8cb1a9c1000	authenticated	authenticated	superadmin@sistema.com	$2a$10$ORtaDdYM29r1TLyo.nRMaOgg.F0GWeBWTlyIAUDq7RJ2.CON9r/s.	2025-06-22 01:25:41.937486+00	\N		\N		\N			\N	2025-10-24 13:39:27.753577+00	{"provider": "email", "providers": ["email"]}	{"name": "Super Admin", "email_verified": true}	\N	2025-06-22 01:25:41.917945+00	2025-10-24 18:25:54.914904+00	\N	\N			\N		0	\N		\N	f	\N	f
 00000000-0000-0000-0000-000000000000	517ea729-c38f-44e8-a303-c4b057b92912	authenticated	authenticated	user@teste.com	$2a$10$OkRfuykxBQLqR5Ev1lru3.G0UHT7.G/N2R732DirgFSi2NRkcL63C	2025-06-22 01:25:42.472075+00	\N		\N		\N			\N	\N	{"provider": "email", "providers": ["email"]}	{"name": "Usuário Teste", "email_verified": true}	\N	2025-06-22 01:25:42.467601+00	2025-06-22 01:25:42.472758+00	\N	\N			\N		0	\N		\N	f	\N	f
 00000000-0000-0000-0000-000000000000	25706d20-3add-409e-b611-867d85bac519	authenticated	authenticated	afiliado@teste.com	$2a$10$yM74O5Mf7V3xDYl0b2VCA.134vb9AAXuA4GEDjEBD.bPJVA8930hK	2025-06-22 01:25:42.314638+00	\N		\N		\N			\N	2025-07-04 22:02:06.185737+00	{"provider": "email", "providers": ["email"]}	{"name": "Afiliado Teste", "email_verified": true}	\N	2025-06-22 01:25:42.3117+00	2025-08-17 01:37:09.380237+00	\N	\N			\N		0	\N		\N	f	\N	f
+00000000-0000-0000-0000-000000000000	e2ded763-40c6-4219-bf77-99b0e9edca9a	authenticated	authenticated	servingsollutions777@gmail.com	$2a$10$2f4ckLgPLql7JUcxsxGIQO5Mg6puMLgIYvpnF1JbJwPbTtcq/S9D6	2025-10-24 18:47:52.192764+00	\N		\N		\N			\N	2025-10-24 18:47:52.200202+00	{"provider": "email", "providers": ["email"]}	{"sub": "e2ded763-40c6-4219-bf77-99b0e9edca9a", "name": "Fernando Sultano", "email": "servingsollutions777@gmail.com", "userType": "empresa", "email_verified": true, "phone_verified": false}	\N	2025-10-24 18:47:52.12006+00	2025-10-25 01:23:39.57165+00	\N	\N			\N		0	\N		\N	f	\N	f
 00000000-0000-0000-0000-000000000000	85e8c8b0-2734-4635-b255-26f1dec33ea5	authenticated	authenticated	teste@teste.com	$2a$10$OwOZHgjaVlwyIaIFkPwu9ukLaVrTbIJXrIVJn22mJSZAfS6P98N86	2025-06-28 22:33:12.891678+00	\N		\N		\N			\N	2025-09-11 22:42:19.578595+00	{"provider": "email", "providers": ["email"]}	{"sub": "85e8c8b0-2734-4635-b255-26f1dec33ea5", "name": "teste", "email": "teste@teste.com", "email_verified": true, "phone_verified": false}	\N	2025-06-28 22:33:12.864315+00	2025-09-11 22:42:19.591572+00	\N	\N			\N		0	\N		\N	f	\N	f
 00000000-0000-0000-0000-000000000000	027b9013-2b30-48bf-91d4-03f79fa74f6a	authenticated	authenticated	fernando@genesisx.com.br	$2a$10$iQLdbYj93hu/OqHq1fvI.uCUOUW8b1QtHGGOULM9F5nVe.utSb.52	2025-09-11 23:26:34.200652+00	\N		\N		\N			\N	2025-09-12 01:38:03.780357+00	{"provider": "email", "providers": ["email"]}	{"sub": "027b9013-2b30-48bf-91d4-03f79fa74f6a", "name": "Soul Glass", "email": "fernando@genesisx.com.br", "userType": "empresa", "email_verified": true, "phone_verified": false}	\N	2025-09-11 23:26:34.12563+00	2025-09-12 04:08:56.795094+00	\N	\N			\N		0	\N		\N	f	\N	f
 \.
@@ -2167,6 +2179,7 @@ bf9d20ea-6ceb-418b-98f8-cdbec80ba003	bf9d20ea-6ceb-418b-98f8-cdbec80ba003	{"sub"
 027b9013-2b30-48bf-91d4-03f79fa74f6a	027b9013-2b30-48bf-91d4-03f79fa74f6a	{"sub": "027b9013-2b30-48bf-91d4-03f79fa74f6a", "name": "Soul Glass", "email": "fernando@genesisx.com.br", "userType": "empresa", "email_verified": false, "phone_verified": false}	email	2025-09-11 23:26:34.15826+00	2025-09-11 23:26:34.158896+00	2025-09-11 23:26:34.158896+00	3f8e496b-0957-4be6-93f9-494b57ca9156
 6b559ac2-c1d8-412d-ab2c-c877f170557c	6b559ac2-c1d8-412d-ab2c-c877f170557c	{"sub": "6b559ac2-c1d8-412d-ab2c-c877f170557c", "name": "danilo alves", "email": "daniloalveskavod@gmail.com", "email_verified": false, "phone_verified": false}	email	2025-09-11 23:35:43.289976+00	2025-09-11 23:35:43.29003+00	2025-09-11 23:35:43.29003+00	0ddd9a30-2ff7-48fb-bea6-03f36dce6b98
 3d3ce7d8-785a-4927-a028-57e295784402	3d3ce7d8-785a-4927-a028-57e295784402	{"sub": "3d3ce7d8-785a-4927-a028-57e295784402", "name": "teste", "email": "1este@teste.com", "userType": "empresa", "email_verified": false, "phone_verified": false}	email	2025-10-10 23:18:39.939519+00	2025-10-10 23:18:39.939578+00	2025-10-10 23:18:39.939578+00	750e8dfe-9c3d-43d0-8c42-522ef780e92d
+e2ded763-40c6-4219-bf77-99b0e9edca9a	e2ded763-40c6-4219-bf77-99b0e9edca9a	{"sub": "e2ded763-40c6-4219-bf77-99b0e9edca9a", "name": "Fernando Sultano", "email": "servingsollutions777@gmail.com", "userType": "empresa", "email_verified": false, "phone_verified": false}	email	2025-10-24 18:47:52.164273+00	2025-10-24 18:47:52.164926+00	2025-10-24 18:47:52.164926+00	73ae8d5c-8010-43d0-adde-e6b3cb59386a
 \.
 
 
@@ -2191,6 +2204,7 @@ fd026b08-a8df-44bd-9e6a-308b06fc9846	6b559ac2-c1d8-412d-ab2c-c877f170557c	2025-0
 1eec3f76-d4ef-47c3-8f60-b76639b76954	11cf6cb0-de2b-4e1c-a9df-b8cb1a9c1000	2025-09-12 00:07:31.685247+00	2025-09-12 00:07:31.685247+00	\N	aal1	\N	\N	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	187.180.138.168	\N
 838bba93-e2ba-44fa-bf7b-ad3a731734a8	6b559ac2-c1d8-412d-ab2c-c877f170557c	2025-09-12 00:57:29.260411+00	2025-09-12 01:55:59.362372+00	\N	aal1	\N	2025-09-12 01:55:59.362282	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	187.180.138.168	\N
 6486c5d1-7e6b-4188-814e-7f3979aaaed2	bf9d20ea-6ceb-418b-98f8-cdbec80ba003	2025-06-24 17:09:13.378332+00	2025-06-24 17:09:13.378332+00	\N	aal1	\N	\N	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36	187.180.138.168	\N
+e85670a7-0b35-42df-be0b-3b6fec67bf1d	e2ded763-40c6-4219-bf77-99b0e9edca9a	2025-10-24 18:47:52.200267+00	2025-10-25 01:23:39.577218+00	\N	aal1	\N	2025-10-25 01:23:39.577131	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36	187.180.138.168	\N
 47a4eb72-9432-46e5-ad3e-31aa2e2658a9	bf9d20ea-6ceb-418b-98f8-cdbec80ba003	2025-06-24 17:39:00.571784+00	2025-06-24 17:39:00.571784+00	\N	aal1	\N	\N	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36	177.189.140.254	\N
 968cd821-9c73-4bff-adf9-9716278a2850	11cf6cb0-de2b-4e1c-a9df-b8cb1a9c1000	2025-09-12 00:10:09.649351+00	2025-09-12 00:10:09.649351+00	\N	aal1	\N	\N	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	187.180.138.168	\N
 c2ca8b4e-77bd-4ab9-974a-24367bc608ae	027b9013-2b30-48bf-91d4-03f79fa74f6a	2025-09-11 23:38:16.724225+00	2025-09-11 23:38:16.724225+00	\N	aal1	\N	\N	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	187.180.138.168	\N
@@ -2323,6 +2337,7 @@ bda6ca03-c5f0-4915-b304-3b300280700a	027b9013-2b30-48bf-91d4-03f79fa74f6a	2025-0
 17eab79b-af1a-47a6-9bc4-7406fda7099b	11cf6cb0-de2b-4e1c-a9df-b8cb1a9c1000	2025-09-12 00:06:10.371079+00	2025-09-12 00:06:10.371079+00	\N	aal1	\N	\N	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	187.180.138.168	\N
 dbd6a225-a83e-4d1d-afa7-9239161a1ed9	11cf6cb0-de2b-4e1c-a9df-b8cb1a9c1000	2025-09-12 00:06:28.826082+00	2025-09-12 00:06:28.826082+00	\N	aal1	\N	\N	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	187.180.138.168	\N
 08e09faf-7c72-40b7-927b-7e3eac3489a8	027b9013-2b30-48bf-91d4-03f79fa74f6a	2025-09-12 00:52:42.667914+00	2025-09-12 04:08:56.810601+00	\N	aal1	\N	2025-09-12 04:08:56.807747	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	187.180.138.168	\N
+be075e2c-a709-47b9-abd5-6fe1ea93b7c8	11cf6cb0-de2b-4e1c-a9df-b8cb1a9c1000	2025-10-24 13:39:27.75438+00	2025-10-24 18:25:54.920619+00	\N	aal1	\N	2025-10-24 18:25:54.920538	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36	187.180.138.168	\N
 \.
 
 
@@ -2445,6 +2460,7 @@ bda6ca03-c5f0-4915-b304-3b300280700a	2025-09-11 23:28:56.122893+00	2025-09-11 23
 968cd821-9c73-4bff-adf9-9716278a2850	2025-09-12 00:10:09.656969+00	2025-09-12 00:10:09.656969+00	password	8253ac1a-7db2-41a3-9268-17658f980383
 08e09faf-7c72-40b7-927b-7e3eac3489a8	2025-09-12 00:52:42.704064+00	2025-09-12 00:52:42.704064+00	password	b06bd743-f145-4cab-9ccf-5ba5bdf948fe
 b19eb90e-00c9-45cc-9d52-b2a565e9eb7a	2025-09-12 01:34:44.893546+00	2025-09-12 01:34:44.893546+00	password	6e70d2c3-f48d-404e-ab0a-8b4108988c01
+be075e2c-a709-47b9-abd5-6fe1ea93b7c8	2025-10-24 13:39:27.813789+00	2025-10-24 13:39:27.813789+00	password	018c822c-d05d-4fe1-b369-58c8d18fcd54
 3abd99a1-a65f-41b3-bffe-d2d3ae84ac76	2025-07-03 18:28:54.283193+00	2025-07-03 18:28:54.283193+00	password	3de12527-f7d8-4361-8e4c-f31285028615
 25ba5b8f-72c4-40e4-8e58-ee6f237314f1	2025-07-04 13:57:40.340984+00	2025-07-04 13:57:40.340984+00	password	2c50ebfe-f6a8-4453-9a67-c33a846a479f
 ec29a56b-5c16-4d9b-8d91-7bf2e53c48b1	2025-07-04 15:10:11.960885+00	2025-07-04 15:10:11.960885+00	password	8080f3da-b2c9-404c-a1ff-9bacfa82af63
@@ -2470,6 +2486,7 @@ fd026b08-a8df-44bd-9e6a-308b06fc9846	2025-09-11 23:35:43.340792+00	2025-09-11 23
 c2a4e4c1-d2b9-4912-a57a-cfd429c2f455	2025-09-12 00:12:14.364577+00	2025-09-12 00:12:14.364577+00	password	723ff0b8-e6e2-4284-b60f-f92353dcc4cd
 838bba93-e2ba-44fa-bf7b-ad3a731734a8	2025-09-12 00:57:29.299668+00	2025-09-12 00:57:29.299668+00	password	d67ba330-918b-43d4-bbb9-80fc727bbf7d
 173de789-dc64-40ea-86d2-a2959e104dce	2025-09-12 01:38:03.793396+00	2025-09-12 01:38:03.793396+00	password	29252586-75af-4eef-82bd-f6d8098bdb54
+e85670a7-0b35-42df-be0b-3b6fec67bf1d	2025-10-24 18:47:52.235311+00	2025-10-24 18:47:52.235311+00	password	3ebf6621-e605-4288-a2d8-89f1542029cc
 c954168b-fa8f-45bc-a0e2-05beaf058d20	2025-09-11 22:42:19.592844+00	2025-09-11 22:42:19.592844+00	password	7d5b8f5b-27f2-4f56-bb68-61f3de6883fa
 \.
 
@@ -2676,6 +2693,7 @@ COPY "auth"."refresh_tokens" ("instance_id", "id", "token", "user_id", "revoked"
 00000000-0000-0000-0000-000000000000	506	r2b7xmbkipm6	25706d20-3add-409e-b611-867d85bac519	t	2025-07-03 02:00:05.157335+00	2025-07-03 03:02:50.195211+00	2wakhrtz3fiy	628ca5cc-f2a7-4862-aaf5-4456495a30ad
 00000000-0000-0000-0000-000000000000	470	cwbwvrymqhy7	25706d20-3add-409e-b611-867d85bac519	t	2025-07-02 13:36:38.596896+00	2025-07-02 14:34:51.4628+00	pprh4wdfd5kn	628ca5cc-f2a7-4862-aaf5-4456495a30ad
 00000000-0000-0000-0000-000000000000	863	qzjlyrsbjcel	25706d20-3add-409e-b611-867d85bac519	f	2025-08-17 01:37:09.366356+00	2025-08-17 01:37:09.366356+00	6owha6gdgiv3	bd4d4532-24f0-490e-8bd5-08b80b5e726b
+00000000-0000-0000-0000-000000000000	1287	jzhq7a6kgkzt	11cf6cb0-de2b-4e1c-a9df-b8cb1a9c1000	t	2025-10-24 13:39:27.773492+00	2025-10-24 16:48:19.970199+00	\N	be075e2c-a709-47b9-abd5-6fe1ea93b7c8
 00000000-0000-0000-0000-000000000000	517	wsdnligghdeh	bf9d20ea-6ceb-418b-98f8-cdbec80ba003	f	2025-07-03 03:09:26.471013+00	2025-07-03 03:09:26.471013+00	kcggqs5fiqzj	57a4c2d0-b3b3-4356-851b-b8f79610cf93
 00000000-0000-0000-0000-000000000000	471	vaad3nkwwhhe	bf9d20ea-6ceb-418b-98f8-cdbec80ba003	t	2025-07-02 13:42:26.992319+00	2025-07-02 14:47:14.79164+00	\N	44b19b24-1e21-413f-80cd-c2cd69b20a08
 00000000-0000-0000-0000-000000000000	477	r3wlark25iba	25706d20-3add-409e-b611-867d85bac519	t	2025-07-02 14:34:51.466222+00	2025-07-02 15:33:22.050932+00	cwbwvrymqhy7	628ca5cc-f2a7-4862-aaf5-4456495a30ad
@@ -2694,6 +2712,7 @@ COPY "auth"."refresh_tokens" ("instance_id", "id", "token", "user_id", "revoked"
 00000000-0000-0000-0000-000000000000	1252	4tmnjoiwv25p	6b559ac2-c1d8-412d-ab2c-c877f170557c	f	2025-09-11 23:43:05.557813+00	2025-09-11 23:43:05.557813+00	\N	13f625cb-a076-4c0e-bf92-00f1eaec5fca
 00000000-0000-0000-0000-000000000000	577	f6n7zh2vucns	25706d20-3add-409e-b611-867d85bac519	t	2025-07-05 03:12:51.95596+00	2025-08-17 00:38:39.052907+00	mzt375buyrcm	bd4d4532-24f0-490e-8bd5-08b80b5e726b
 00000000-0000-0000-0000-000000000000	1270	a3txmcs4fsez	027b9013-2b30-48bf-91d4-03f79fa74f6a	f	2025-09-12 01:33:31.129453+00	2025-09-12 01:33:31.129453+00	\N	0dc50f72-76dd-4544-916d-9e02460021fb
+00000000-0000-0000-0000-000000000000	1288	oczed4tv5fqo	11cf6cb0-de2b-4e1c-a9df-b8cb1a9c1000	t	2025-10-24 16:48:19.995495+00	2025-10-24 18:25:54.89283+00	jzhq7a6kgkzt	be075e2c-a709-47b9-abd5-6fe1ea93b7c8
 00000000-0000-0000-0000-000000000000	538	j6ehhe3e4cy4	bf9d20ea-6ceb-418b-98f8-cdbec80ba003	t	2025-07-04 13:57:40.325926+00	2025-07-04 14:57:47.625693+00	\N	25ba5b8f-72c4-40e4-8e58-ee6f237314f1
 00000000-0000-0000-0000-000000000000	542	jb2cou4i2upj	85e8c8b0-2734-4635-b255-26f1dec33ea5	t	2025-07-04 15:12:45.673432+00	2025-07-04 16:43:51.524843+00	\N	80e3f932-99ba-49b7-b3a6-bc93751a9f3c
 00000000-0000-0000-0000-000000000000	540	xgwuxdc5jcqp	bf9d20ea-6ceb-418b-98f8-cdbec80ba003	t	2025-07-04 14:57:47.634486+00	2025-07-04 16:46:06.87007+00	j6ehhe3e4cy4	25ba5b8f-72c4-40e4-8e58-ee6f237314f1
@@ -2735,6 +2754,7 @@ COPY "auth"."refresh_tokens" ("instance_id", "id", "token", "user_id", "revoked"
 00000000-0000-0000-0000-000000000000	856	qjtcfrlnxxio	bf9d20ea-6ceb-418b-98f8-cdbec80ba003	t	2025-08-07 17:14:45.833047+00	2025-08-07 22:07:51.987514+00	k57hxagrtzkd	25ba5b8f-72c4-40e4-8e58-ee6f237314f1
 00000000-0000-0000-0000-000000000000	1271	xokaz7mkbumk	027b9013-2b30-48bf-91d4-03f79fa74f6a	f	2025-09-12 01:34:44.882531+00	2025-09-12 01:34:44.882531+00	\N	b19eb90e-00c9-45cc-9d52-b2a565e9eb7a
 00000000-0000-0000-0000-000000000000	1256	2o2mgwhebbis	6b559ac2-c1d8-412d-ab2c-c877f170557c	t	2025-09-11 23:49:58.198712+00	2025-09-12 01:36:31.28912+00	\N	2e3de634-e138-413a-87c0-95679c8d35a6
+00000000-0000-0000-0000-000000000000	1289	y4hfa2qg4qyq	11cf6cb0-de2b-4e1c-a9df-b8cb1a9c1000	f	2025-10-24 18:25:54.900319+00	2025-10-24 18:25:54.900319+00	oczed4tv5fqo	be075e2c-a709-47b9-abd5-6fe1ea93b7c8
 00000000-0000-0000-0000-000000000000	597	ut3g33sejwz3	bf9d20ea-6ceb-418b-98f8-cdbec80ba003	f	2025-07-17 22:01:39.923613+00	2025-07-17 22:01:39.923613+00	wcylzukt7lmq	ec29a56b-5c16-4d9b-8d91-7bf2e53c48b1
 00000000-0000-0000-0000-000000000000	599	coakmcxvpqfz	85e8c8b0-2734-4635-b255-26f1dec33ea5	f	2025-07-17 22:06:37.71527+00	2025-07-17 22:06:37.71527+00	zt3ybqgjji4v	80e3f932-99ba-49b7-b3a6-bc93751a9f3c
 00000000-0000-0000-0000-000000000000	596	2kwspktufoxb	bf9d20ea-6ceb-418b-98f8-cdbec80ba003	t	2025-07-17 22:01:30.219068+00	2025-07-17 23:42:18.742491+00	jhgte4ixtc6h	25ba5b8f-72c4-40e4-8e58-ee6f237314f1
@@ -2743,12 +2763,14 @@ COPY "auth"."refresh_tokens" ("instance_id", "id", "token", "user_id", "revoked"
 00000000-0000-0000-0000-000000000000	1272	a5d6fam3mlhu	6b559ac2-c1d8-412d-ab2c-c877f170557c	f	2025-09-12 01:36:31.299263+00	2025-09-12 01:36:31.299263+00	2o2mgwhebbis	2e3de634-e138-413a-87c0-95679c8d35a6
 00000000-0000-0000-0000-000000000000	1257	imosxonqp2s5	027b9013-2b30-48bf-91d4-03f79fa74f6a	t	2025-09-11 23:59:55.237864+00	2025-09-12 02:27:19.026777+00	\N	759951d8-3a68-4ba7-b0fc-b90e83606d5c
 00000000-0000-0000-0000-000000000000	663	ocdwzpih5nwp	bf9d20ea-6ceb-418b-98f8-cdbec80ba003	t	2025-07-23 06:03:31.684999+00	2025-07-24 14:12:31.08653+00	dy6iaqugcw5m	25ba5b8f-72c4-40e4-8e58-ee6f237314f1
+00000000-0000-0000-0000-000000000000	1290	ntag6hs64awt	e2ded763-40c6-4219-bf77-99b0e9edca9a	t	2025-10-24 18:47:52.218672+00	2025-10-25 00:25:00.978261+00	\N	e85670a7-0b35-42df-be0b-3b6fec67bf1d
 00000000-0000-0000-0000-000000000000	636	dy6iaqugcw5m	bf9d20ea-6ceb-418b-98f8-cdbec80ba003	t	2025-07-19 18:47:02.623246+00	2025-07-23 06:03:31.676376+00	2f6xajtcle7i	25ba5b8f-72c4-40e4-8e58-ee6f237314f1
 00000000-0000-0000-0000-000000000000	1258	bfnwvhwnapag	11cf6cb0-de2b-4e1c-a9df-b8cb1a9c1000	f	2025-09-12 00:05:28.499674+00	2025-09-12 00:05:28.499674+00	\N	694cf1f8-5bce-4f3d-b266-8de9da2eacfe
 00000000-0000-0000-0000-000000000000	1259	pli5tiksxeep	11cf6cb0-de2b-4e1c-a9df-b8cb1a9c1000	f	2025-09-12 00:06:10.375937+00	2025-09-12 00:06:10.375937+00	\N	17eab79b-af1a-47a6-9bc4-7406fda7099b
 00000000-0000-0000-0000-000000000000	691	hjasu7ntlq7q	bf9d20ea-6ceb-418b-98f8-cdbec80ba003	t	2025-07-24 14:12:31.103312+00	2025-07-24 15:13:22.536351+00	ocdwzpih5nwp	25ba5b8f-72c4-40e4-8e58-ee6f237314f1
 00000000-0000-0000-0000-000000000000	1260	q7wtb4ytoqo7	11cf6cb0-de2b-4e1c-a9df-b8cb1a9c1000	f	2025-09-12 00:06:28.827872+00	2025-09-12 00:06:28.827872+00	\N	dbd6a225-a83e-4d1d-afa7-9239161a1ed9
 00000000-0000-0000-0000-000000000000	1273	aw4yvwcx24qp	027b9013-2b30-48bf-91d4-03f79fa74f6a	t	2025-09-12 01:38:03.786275+00	2025-09-12 02:36:12.463954+00	\N	173de789-dc64-40ea-86d2-a2959e104dce
+00000000-0000-0000-0000-000000000000	1291	jireqvwskwjv	e2ded763-40c6-4219-bf77-99b0e9edca9a	t	2025-10-25 00:25:01.000167+00	2025-10-25 01:23:39.563741+00	ntag6hs64awt	e85670a7-0b35-42df-be0b-3b6fec67bf1d
 00000000-0000-0000-0000-000000000000	697	p5ratuypt6g3	bf9d20ea-6ceb-418b-98f8-cdbec80ba003	t	2025-07-24 15:13:22.541973+00	2025-07-24 16:11:50.146996+00	hjasu7ntlq7q	25ba5b8f-72c4-40e4-8e58-ee6f237314f1
 00000000-0000-0000-0000-000000000000	702	hsbe4mye6bs2	bf9d20ea-6ceb-418b-98f8-cdbec80ba003	t	2025-07-24 16:11:50.152466+00	2025-07-24 17:10:06.037768+00	p5ratuypt6g3	25ba5b8f-72c4-40e4-8e58-ee6f237314f1
 00000000-0000-0000-0000-000000000000	706	p5bjiijyzfiy	bf9d20ea-6ceb-418b-98f8-cdbec80ba003	t	2025-07-24 17:10:06.051645+00	2025-07-24 18:08:21.762671+00	hsbe4mye6bs2	25ba5b8f-72c4-40e4-8e58-ee6f237314f1
@@ -2766,6 +2788,7 @@ COPY "auth"."refresh_tokens" ("instance_id", "id", "token", "user_id", "revoked"
 00000000-0000-0000-0000-000000000000	1261	nskhazhei3ur	11cf6cb0-de2b-4e1c-a9df-b8cb1a9c1000	f	2025-09-12 00:07:31.691838+00	2025-09-12 00:07:31.691838+00	\N	1eec3f76-d4ef-47c3-8f60-b76639b76954
 00000000-0000-0000-0000-000000000000	1274	ehb3tvxi3ppb	6b559ac2-c1d8-412d-ab2c-c877f170557c	f	2025-09-12 01:55:59.344346+00	2025-09-12 01:55:59.344346+00	gihedi25e6s6	838bba93-e2ba-44fa-bf7b-ad3a731734a8
 00000000-0000-0000-0000-000000000000	743	xmcm6ibdpnej	bf9d20ea-6ceb-418b-98f8-cdbec80ba003	t	2025-07-29 21:13:57.46397+00	2025-07-29 23:32:39.708826+00	3uojf3cf6pzp	25ba5b8f-72c4-40e4-8e58-ee6f237314f1
+00000000-0000-0000-0000-000000000000	1292	nftlsguo75ms	e2ded763-40c6-4219-bf77-99b0e9edca9a	f	2025-10-25 01:23:39.567001+00	2025-10-25 01:23:39.567001+00	jireqvwskwjv	e85670a7-0b35-42df-be0b-3b6fec67bf1d
 00000000-0000-0000-0000-000000000000	746	oyfbqf6voipi	bf9d20ea-6ceb-418b-98f8-cdbec80ba003	t	2025-07-29 23:32:39.722321+00	2025-07-30 04:37:22.573183+00	xmcm6ibdpnej	25ba5b8f-72c4-40e4-8e58-ee6f237314f1
 00000000-0000-0000-0000-000000000000	747	f6p5rljoe3ec	bf9d20ea-6ceb-418b-98f8-cdbec80ba003	t	2025-07-30 04:37:22.577339+00	2025-07-30 05:35:39.244895+00	oyfbqf6voipi	25ba5b8f-72c4-40e4-8e58-ee6f237314f1
 00000000-0000-0000-0000-000000000000	751	vhmcwg4hpef7	bf9d20ea-6ceb-418b-98f8-cdbec80ba003	t	2025-07-30 05:35:39.252703+00	2025-08-03 03:48:41.499436+00	f6p5rljoe3ec	25ba5b8f-72c4-40e4-8e58-ee6f237314f1
@@ -2849,7 +2872,7 @@ COPY "public"."subscriptions" ("id", "name", "price", "features", "created_at", 
 COPY "public"."companies" ("id", "name", "subdomain", "subscription_id", "white_label_settings", "created_at", "updated_at") FROM stdin;
 25	teste	teste	\N	\N	2025-10-10 23:18:40.261	2025-10-10 23:18:40.261
 1	Empresa Padrão	empresa-padrao	1	\N	2025-06-22 00:44:26.353793	2025-06-22 00:44:26.353793
-24	Soul Glass	soulglass	5	\N	2025-09-11 23:26:34.741	2025-09-11 23:56:48.482
+27	Soul Glass	soulglass	5	\N	2025-10-24 18:47:51.853	2025-10-24 18:49:06.343
 \.
 
 
@@ -2858,12 +2881,6 @@ COPY "public"."companies" ("id", "name", "subdomain", "subscription_id", "white_
 --
 
 COPY "public"."active_sessions" ("id", "session_id", "affiliate_code", "start_time", "last_activity", "total_active_time", "is_active", "ip_address", "user_agent", "referrer", "screen_resolution", "timezone", "company_id", "created_at", "updated_at") FROM stdin;
-930	eng_1757636543364_tcps9x84g	AF62_1757636384437	2025-09-12 00:22:23.364+00	2025-09-12 00:22:23.364+00	0	t	187.180.138.168	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	\N	1440x900	America/Sao_Paulo	24	2025-09-12 00:22:23.864168+00	2025-09-12 00:22:23.864168+00
-931	eng_1757636543561_d3xf2ev5e	AF62_1757636384437	2025-09-12 00:22:23.561+00	2025-09-12 00:22:23.561+00	0	t	187.180.138.168	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	\N	1440x900	America/Sao_Paulo	24	2025-09-12 00:22:24.012892+00	2025-09-12 00:22:24.012892+00
-928	eng_1757636543308_9nzojxpmv	AF62_1757636384437	2025-09-12 00:22:23.308+00	2025-09-12 00:22:24.008+00	0	t	187.180.138.168	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	\N	1440x900	America/Sao_Paulo	24	2025-09-12 00:22:23.676627+00	2025-09-12 00:22:24.081675+00
-934	eng_1757636543656_rcytm6vt5	AF62_1757636384437	2025-09-12 00:22:23.656+00	2025-09-12 00:22:23.656+00	0	t	187.180.138.168	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	\N	1440x900	America/Sao_Paulo	24	2025-09-12 00:22:24.157929+00	2025-09-12 00:22:24.157929+00
-929	eng_1757636543310_n0e5u77f2	AF62_1757636384437	2025-09-12 00:22:23.31+00	2025-09-12 00:22:24.151+00	0	t	187.180.138.168	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	\N	1440x900	America/Sao_Paulo	24	2025-09-12 00:22:23.722048+00	2025-09-12 00:22:24.254398+00
-937	eng_1757636543744_qznpixz50	AF62_1757636384437	2025-09-12 00:22:23.744+00	2025-09-12 00:59:33.971+00	10	t	187.180.138.168	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	\N	1440x900	America/Sao_Paulo	24	2025-09-12 00:22:24.569828+00	2025-09-12 00:59:34.034966+00
 \.
 
 
@@ -2886,9 +2903,8 @@ COPY "public"."roles" ("id", "name", "created_at", "updated_at") FROM stdin;
 COPY "public"."users" ("id", "role_id", "company_id", "name", "email", "created_at", "updated_at", "status") FROM stdin;
 3	3	1	Afiliado Teste	afiliado@teste.com	2025-06-22 01:24:45.503327	2025-09-11 22:54:05.429	active
 2	2	1	Admin da Empresa	admin@empresa.com	2025-06-22 01:24:45.503327	2025-09-11 22:54:18.893	active
-61	2	24	Soul Glass	fernando@genesisx.com.br	2025-09-11 23:26:34.929	2025-09-11 23:26:34.929	active
-62	3	24	danilo alves	daniloalveskavod@gmail.com	2025-09-11 23:35:43.462198	2025-09-11 23:35:43.462198	active
 63	2	25	teste	1este@teste.com	2025-10-10 23:18:40.378	2025-10-10 23:18:40.378	active
+64	2	27	Fernando Sultano	servingsollutions777@gmail.com	2025-10-24 18:47:51.971	2025-10-24 18:47:51.971	active
 1	1	\N	Super Admin	superadmin@sistema.com	2025-06-22 01:24:45.503327	2025-06-22 23:27:02.871009	active
 \.
 
@@ -2916,8 +2932,6 @@ COPY "public"."affiliate_bank_data" ("id", "user_id", "bank_name", "agency", "ac
 --
 
 COPY "public"."affiliate_commissions_earned" ("id", "user_id", "company_id", "order_item_id", "amount", "status", "earned_at", "created_at", "updated_at", "source_sale_id", "commission_type", "level", "source_affiliate_user_id") FROM stdin;
-57	62	24	\N	78.00	paid	2025-09-12 00:31:23.74462	2025-09-12 00:33:30.163067	2025-09-12 00:53:17.441	81	direct	1	\N
-58	62	24	\N	791.4	paid	2025-09-12 01:02:49.039	2025-09-12 01:02:49.146337	2025-09-12 01:25:11.766	\N	direct	1	\N
 \.
 
 
@@ -2926,8 +2940,6 @@ COPY "public"."affiliate_commissions_earned" ("id", "user_id", "company_id", "or
 --
 
 COPY "public"."products" ("id", "company_id", "name", "description", "price", "type", "created_at", "updated_at", "stock_quantity", "unlimited_stock", "checkout_type", "whatsform_discount_amount", "checkout_title", "checkout_subtitle", "image_url") FROM stdin;
-45	24	Soul Glass	Estou indicando a Soul Glass	0	digital	2025-09-11 23:33:54.049421	2025-09-11 23:42:45.115	0	t	whatsapp	\N	Você ganhou R$ 300,00 de Desconto!	Solicite seu Orçamento Gratuito e Resgate seu Desconto!	https://udmtzliexluvjzhzgdyj.supabase.co/storage/v1/object/public/product-images/company-24/837cec26-4f7e-47aa-bedc-feda02b115ed.jpg
-46	24	Cortina de Vidro	Envidraçamento de Sacada	26380	physical	2025-09-12 00:56:08.788228	2025-09-12 00:56:35.672	0	t	whatsform	300.00	Checkout	Finalize sua compra de forma rápida e segura	https://udmtzliexluvjzhzgdyj.supabase.co/storage/v1/object/public/product-images/company-24/675eae9f-d8f3-4ba9-904e-487f5ba452e1.jpg
 \.
 
 
@@ -2936,8 +2948,6 @@ COPY "public"."products" ("id", "company_id", "name", "description", "price", "t
 --
 
 COPY "public"."affiliate_links" ("id", "user_id", "product_id", "company_id", "code", "created_at", "updated_at") FROM stdin;
-151	62	45	24	AF62_1757636384437	2025-09-12 00:19:44.54289	2025-09-12 00:19:44.54289
-152	62	46	24	AF62_1757638730699	2025-09-12 00:58:50.79934	2025-09-12 00:58:50.79934
 \.
 
 
@@ -2946,8 +2956,6 @@ COPY "public"."affiliate_links" ("id", "user_id", "product_id", "company_id", "c
 --
 
 COPY "public"."sales" ("id", "company_id", "affiliate_user_id", "customer_name", "customer_email", "product_name", "amount", "commission_amount", "coupon_code", "referral_source", "status", "payment_method", "transaction_id", "sale_date", "notes", "created_at", "updated_at") FROM stdin;
-81	24	62	Bob Vendas	bobvendas@gmail.com	Soul Glass	2600.00	78.00	\N	AF62_1757636384437	confirmed	pix	\N	2025-09-12 00:31:23.74462	venda realizada com sucesso!	2025-09-12 00:31:23.74462	2025-09-12 00:33:30.163067
-82	24	62	Bob Clientes	bobclientes@gmail.com	Cortina de Vidro	26380.00	791.40	\N	AF62_1757638730699	confirmed	whatsapp	\N	2025-09-12 01:02:48.532243	venda realizado com sucesso!	2025-09-12 01:02:48.532243	2025-09-12 01:03:09.514551
 \.
 
 
@@ -2956,8 +2964,6 @@ COPY "public"."sales" ("id", "company_id", "affiliate_user_id", "customer_name",
 --
 
 COPY "public"."affiliate_conversions" ("id", "affiliate_link_id", "user_id", "company_id", "sale_id", "commission_amount", "converted_at", "created_at") FROM stdin;
-17	151	62	24	81	78.00	2025-09-12 00:31:23.852	2025-09-12 00:31:23.954387
-18	152	62	24	82	791.40	2025-09-12 01:02:48.666	2025-09-12 01:02:48.761814
 \.
 
 
@@ -2974,8 +2980,6 @@ COPY "public"."affiliate_invitations" ("id", "company_id", "token", "email", "cr
 --
 
 COPY "public"."affiliate_link_clicks" ("id", "affiliate_link_id", "user_id", "company_id", "ip_address", "user_agent", "referrer", "clicked_at", "created_at") FROM stdin;
-10120	151	62	24	187.180.138.168	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	https://preview--indikimais.lovable.app/	2025-09-12 00:22:23.278	2025-09-12 00:22:23.298503
-10121	152	62	24	187.180.138.168	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	https://preview--indikimais.lovable.app/	2025-09-12 00:59:03.75	2025-09-12 00:59:03.773011
 \.
 
 
@@ -2984,7 +2988,6 @@ COPY "public"."affiliate_link_clicks" ("id", "affiliate_link_id", "user_id", "co
 --
 
 COPY "public"."withdrawal_requests" ("id", "user_id", "company_id", "amount", "status", "requested_at", "processed_at", "created_at", "updated_at") FROM stdin;
-8	62	24	78	completed	2025-09-12 01:06:30.647002	2025-09-12 01:07:15.404	2025-09-12 01:06:30.647002	2025-09-12 01:07:15.462418
 \.
 
 
@@ -3044,9 +3047,6 @@ COPY "public"."company_subscriptions" ("id", "company_id", "subscription_id", "s
 --
 
 COPY "public"."coupons" ("id", "company_id", "code", "value", "expires_at", "product_id", "created_at", "updated_at", "max_uses", "used_count", "active", "discount_type", "affiliate_user_id") FROM stdin;
-157	24	DESCONTO300DAN	300	2026-01-06	\N	2025-09-12 00:00:35.279319	2025-09-12 00:00:35.279319	3	0	t	fixed	62
-159	24	CUPAF62_1757638730699	300	\N	46	2025-09-12 00:58:50.79934	2025-09-12 00:58:50.79934	\N	0	t	fixed	62
-158	24	CUPAF62_1757636384437	300	\N	45	2025-09-12 00:19:44.54289	2025-09-12 00:19:44.54289	\N	0	t	fixed	62
 \.
 
 
@@ -3084,17 +3084,7 @@ COPY "public"."engagement_events" ("id", "session_id", "affiliate_code", "event_
 233	eng_1752858189446_h495ltan9	AF42_1752859733295	intention_cta	2025-07-18 17:29:57.911+00	\N	{"page": "/whatsform/12", "value": 300, "cta_type": "whatsform_submit", "form_name": "whatsform_checkout_form", "button_text": "Solicitar Orçamento via WhatsApp", "discount_amount": 300}	\N	Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-07-18 17:29:58.29945+00
 234	eng_1752858189446_h495ltan9	AF42_1752859733295	checkout_complete	2025-07-18 17:29:59.451+00	\N	{"page": "/whatsform/12", "value": 300}	\N	Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-07-18 17:29:59.548106+00
 235	eng_1752858189446_h495ltan9	AF42_1752859733295	negotiation_start	2025-07-18 17:29:59.451+00	\N	{"page": "/whatsform/12", "lead_type": "whatsform", "whatsapp_url": "https://wa.me/5519988054829?text=Ol%C3%A1%20Vim%20atrav%C3%A9s%20de%20uma%20indica%C3%A7%C3%A3o%20com%20um%20cupom%20de%20desconto%20no%20valor%20de%20R%24300.00%20(cupom%20CUPAF42_1752796450201)%0A%0A%F0%9F%93%8B%20*Dados%20para%20contato%3A*%0ANome%3A%20france%0AEmail%3A%20g%40gmail.com%0AWhatsApp%3A%2011944473632%0A", "contactMethod": "whatsapp", "contact_method": "whatsapp", "discount_amount": 300, "company_whatsapp": "5519988054829"}	\N	Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-07-18 17:29:59.548106+00
-1232	eng_1757636543308_9nzojxpmv	AF62_1757636384437	session_start	2025-09-12 00:22:23.695+00	\N	{"page": "/whatsapp-checkout/45", "referrer": "", "product_id": 45, "affiliate_code": "AF62_1757636384437"}	187.180.138.168	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	24	2025-09-12 00:22:23.897642+00
-1233	eng_1757636543310_n0e5u77f2	AF62_1757636384437	session_start	2025-09-12 00:22:23.712+00	\N	{"page": "/whatsapp-checkout/45", "referrer": "", "product_id": 45, "affiliate_code": "AF62_1757636384437"}	187.180.138.168	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	24	2025-09-12 00:22:23.897642+00
-1242	eng_1757636543744_qznpixz50	AF62_1757636384437	form_start	2025-09-12 00:22:25.129+00	\N	{"page": "/whatsapp-checkout/45", "formName": "whatsapp_checkout_form"}	187.180.138.168	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	24	2025-09-12 00:22:25.201491+00
-1243	eng_1757636543744_qznpixz50	AF62_1757636384437	interaction	2025-09-12 00:22:25.129+00	\N	{"page": "/whatsapp-checkout/45", "element": "form_field", "section": "name"}	187.180.138.168	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	24	2025-09-12 00:22:25.201491+00
-1244	eng_1757636543744_qznpixz50	AF62_1757636384437	page_focus	2025-09-12 00:23:30.261+00	\N	{"idleTime": 65132}	187.180.138.168	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	24	2025-09-12 00:23:30.344121+00
-1245	eng_1757636543744_qznpixz50	AF62_1757636384437	interaction	2025-09-12 00:23:30.261+00	\N	{"page": "/whatsapp-checkout/45", "element": "form_field", "section": "whatsapp"}	187.180.138.168	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	24	2025-09-12 00:23:30.344121+00
-1246	eng_1757636543744_qznpixz50	AF62_1757636384437	intention_cta	2025-09-12 00:23:41.08+00	\N	{"page": "/whatsapp-checkout/45", "value": 0, "cta_type": "whatsapp_submit", "form_name": "whatsapp_checkout_form", "button_text": "Finalize a compra via whatsapp", "discount_amount": 0}	187.180.138.168	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	24	2025-09-12 00:23:41.155141+00
 231	eng_1752858189446_h495ltan9	AF42_1752859733295	negotiation_start	2025-07-18 17:29:17.728+00	\N	{"page": "/whatsform/12", "lead_type": "whatsform", "whatsapp_url": "https://wa.me/5519988054829?text=Ol%C3%A1%20Vim%20atrav%C3%A9s%20de%20uma%20indica%C3%A7%C3%A3o%20com%20um%20cupom%20de%20desconto%20no%20valor%20de%20R%24300.00%20(cupom%20CUPAF42_1752796450201)%0A%0A%F0%9F%93%8B%20*Dados%20para%20contato%3A*%0ANome%3A%20france%0AEmail%3A%20g%40gmail.com%0AWhatsApp%3A%2011944473632%0A", "contactMethod": "whatsapp", "contact_method": "whatsapp", "discount_amount": 300, "company_whatsapp": "5519988054829"}	\N	Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-07-18 17:29:17.817247+00
-1234	eng_1757636543364_tcps9x84g	AF62_1757636384437	session_start	2025-09-12 00:22:23.854+00	\N	{"page": "/whatsapp-checkout/45", "referrer": "", "product_id": 45, "affiliate_code": "AF62_1757636384437"}	187.180.138.168	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	24	2025-09-12 00:22:24.012467+00
-1241	eng_1757636543744_qznpixz50	AF62_1757636384437	session_start	2025-09-12 00:22:24.576+00	\N	{"page": "/whatsapp-checkout/45", "referrer": "", "product_id": 45, "affiliate_code": "AF62_1757636384437"}	187.180.138.168	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	24	2025-09-12 00:22:24.764723+00
-1247	eng_1757636543744_qznpixz50	AF62_1757636384437	form_complete	2025-09-12 00:23:41.083+00	\N	{"page": "/whatsapp-checkout/45", "fields": ["name", "whatsapp", "email"], "formName": "whatsapp_checkout_form"}	187.180.138.168	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	24	2025-09-12 00:23:41.159367+00
 232	eng_1752858189446_h495ltan9	AF42_1752859733295	form_complete	2025-07-18 17:29:57.921+00	\N	{"page": "/whatsform/12", "fields": ["name", "email", "whatsapp"], "formName": "whatsform_checkout_form"}	\N	Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-07-18 17:29:58.299604+00
 236	eng_1752858189446_h495ltan9	AF42_1752860303268	page_focus	2025-07-18 17:38:39.19+00	\N	{"idleTime": 519739}	\N	Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-07-18 17:38:39.356027+00
 237	eng_1752858189446_h495ltan9	AF42_1752860303268	form_start	2025-07-18 17:38:39.19+00	\N	{"page": "/whatsform/12", "formName": "whatsform_checkout_form"}	\N	Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-07-18 17:38:39.356027+00
@@ -3106,30 +3096,12 @@ COPY "public"."engagement_events" ("id", "session_id", "affiliate_code", "event_
 243	eng_1752858189446_h495ltan9	AF42_1752860303268	form_complete	2025-07-18 17:38:46.12+00	\N	{"page": "/whatsform/12", "fields": ["name", "email", "whatsapp"], "formName": "whatsform_checkout_form"}	\N	Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-07-18 17:38:46.488904+00
 244	eng_1752858189446_h495ltan9	AF42_1752860303268	checkout_complete	2025-07-18 17:38:47.444+00	\N	{"page": "/whatsform/12", "value": 300}	\N	Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-07-18 17:38:47.532083+00
 245	eng_1752858189446_h495ltan9	AF42_1752860303268	negotiation_start	2025-07-18 17:38:47.444+00	\N	{"page": "/whatsform/12", "lead_type": "whatsform", "whatsapp_url": "https://wa.me/5519988054829?text=Ol%C3%A1%20Vim%20atrav%C3%A9s%20de%20uma%20indica%C3%A7%C3%A3o%20com%20um%20cupom%20de%20desconto%20no%20valor%20de%20R%24300.00%20(cupom%20CUPAF42_1752796450201)%0A%0A%F0%9F%93%8B%20*Dados%20para%20contato%3A*%0ANome%3A%20lea%0AEmail%3A%20bruno.jose%40v4company.com%0AWhatsApp%3A%2011995555%0A", "contactMethod": "whatsapp", "contact_method": "whatsapp", "discount_amount": 300, "company_whatsapp": "5519988054829"}	\N	Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-07-18 17:38:47.532083+00
-1235	eng_1757636543561_d3xf2ev5e	AF62_1757636384437	session_start	2025-09-12 00:22:24.007+00	\N	{"page": "/whatsapp-checkout/45", "referrer": "", "product_id": 45, "affiliate_code": "AF62_1757636384437"}	187.180.138.168	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	24	2025-09-12 00:22:24.07089+00
-1236	eng_1757636543308_9nzojxpmv	AF62_1757636384437	page_view	2025-09-12 00:22:24.008+00	\N	{"page": "/whatsapp-checkout/45"}	187.180.138.168	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	24	2025-09-12 00:22:24.07089+00
-1237	eng_1757636543308_9nzojxpmv	AF62_1757636384437	checkout_start	2025-09-12 00:22:24.008+00	\N	{"page": "/whatsapp-checkout/45"}	187.180.138.168	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	24	2025-09-12 00:22:24.07089+00
-1238	eng_1757636543656_rcytm6vt5	AF62_1757636384437	session_start	2025-09-12 00:22:24.151+00	\N	{"page": "/whatsapp-checkout/45", "referrer": "", "product_id": 45, "affiliate_code": "AF62_1757636384437"}	187.180.138.168	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	24	2025-09-12 00:22:24.251813+00
-1239	eng_1757636543310_n0e5u77f2	AF62_1757636384437	page_view	2025-09-12 00:22:24.151+00	\N	{"page": "/whatsapp-checkout/45"}	187.180.138.168	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	24	2025-09-12 00:22:24.251813+00
-1240	eng_1757636543310_n0e5u77f2	AF62_1757636384437	checkout_start	2025-09-12 00:22:24.151+00	\N	{"page": "/whatsapp-checkout/45"}	187.180.138.168	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	24	2025-09-12 00:22:24.251813+00
-1248	eng_1757636543744_qznpixz50	AF62_1757636384437	checkout_complete	2025-09-12 00:23:42.435+00	\N	{"page": "/whatsapp-checkout/45", "value": 0}	187.180.138.168	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	24	2025-09-12 00:23:42.494541+00
-1249	eng_1757636543744_qznpixz50	AF62_1757636384437	negotiation_start	2025-09-12 00:23:42.436+00	\N	{"page": "/whatsapp-checkout/45", "value": 0, "lead_type": "whatsapp_checkout", "whatsapp_url": "https://wa.me/5511999999999?text=Ol%C3%A1!%20Vim%20da%20Indiki%2B%2C%20meu%20cupom%20%C3%A9%20%22AF62_1757636384437%22%20e%20gostaria%20de%20tirar%20um%20or%C3%A7amento.%0A%0A%F0%9F%93%8B%20*Dados%20do%20cliente%3A*%0ANome%3A%20Bob%20Vendas%0AWhatsApp%3A%20(11)99100-1663%0AEmail%3A%20bobvendas%40gmail.com%0A%0A%F0%9F%9B%8D%EF%B8%8F%20*Produto%20de%20interesse%3A*%0ASoul%20Glass%0AValor%3A%20R%24%200.00%0ACupom%20aplicado%3A%20CUPAF62_1757636384437", "contactMethod": "whatsapp", "contact_method": "whatsapp", "company_whatsapp": "5511999999999"}	187.180.138.168	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	24	2025-09-12 00:23:42.494541+00
-1250	eng_1757636543744_qznpixz50	AF62_1757638730699	page_focus	2025-09-12 00:59:08.624+00	\N	{"idleTime": 2126188}	187.180.138.168	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	24	2025-09-12 00:59:08.698574+00
-1251	eng_1757636543744_qznpixz50	AF62_1757638730699	form_start	2025-09-12 00:59:08.625+00	\N	{"page": "/whatsform/46", "formName": "whatsform_checkout_form"}	187.180.138.168	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	24	2025-09-12 00:59:08.698574+00
-1252	eng_1757636543744_qznpixz50	AF62_1757638730699	page_focus	2025-09-12 00:59:08.625+00	\N	{"idleTime": 2126189}	187.180.138.168	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	24	2025-09-12 00:59:08.698574+00
-1253	eng_1757636543744_qznpixz50	AF62_1757638730699	interaction	2025-09-12 00:59:08.625+00	\N	{"page": "/whatsform/46", "element": "form_field", "section": "name"}	187.180.138.168	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	24	2025-09-12 00:59:08.698574+00
-1254	eng_1757636543744_qznpixz50	AF62_1757638730699	interaction	2025-09-12 00:59:18.852+00	\N	{"page": "/whatsform/46", "element": "form_field", "section": "email"}	187.180.138.168	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	24	2025-09-12 00:59:18.91585+00
-1255	eng_1757636543744_qznpixz50	AF62_1757638730699	interaction	2025-09-12 00:59:23.844+00	\N	{"page": "/whatsform/46", "element": "form_field", "section": "whatsapp"}	187.180.138.168	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	24	2025-09-12 00:59:23.912128+00
-1256	eng_1757636543744_qznpixz50	AF62_1757638730699	intention_cta	2025-09-12 00:59:32.679+00	\N	{"page": "/whatsform/46", "value": 300, "cta_type": "whatsform_submit", "form_name": "whatsform_checkout_form", "button_text": "Solicitar Orçamento via WhatsApp", "discount_amount": 300}	187.180.138.168	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	24	2025-09-12 00:59:32.751476+00
-1257	eng_1757636543744_qznpixz50	AF62_1757638730699	form_complete	2025-09-12 00:59:32.682+00	\N	{"page": "/whatsform/46", "fields": ["name", "email", "whatsapp"], "formName": "whatsform_checkout_form"}	187.180.138.168	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	24	2025-09-12 00:59:32.756544+00
 333	eng_1752858189446_h495ltan9	AF42_1752864797985	page_focus	2025-07-18 18:57:31.416+00	\N	{"idleTime": 860759}	\N	Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-07-18 18:57:31.816173+00
 334	eng_1752858189446_h495ltan9	AF42_1752864797985	form_start	2025-07-18 18:57:31.417+00	\N	{"page": "/whatsform/12", "formName": "whatsform_checkout_form"}	\N	Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-07-18 18:57:31.816173+00
 335	eng_1752858189446_h495ltan9	AF42_1752864797985	page_focus	2025-07-18 18:57:31.417+00	\N	{"idleTime": 860760}	\N	Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-07-18 18:57:31.816173+00
 336	eng_1752858189446_h495ltan9	AF42_1752864797985	interaction	2025-07-18 18:57:31.418+00	\N	{"page": "/whatsform/12", "element": "form_field", "section": "name"}	\N	Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-07-18 18:57:31.816173+00
 337	eng_1752858189446_h495ltan9	AF42_1752864797985	interaction	2025-07-18 18:57:33.128+00	\N	{"page": "/whatsform/12", "element": "form_field", "section": "email"}	\N	Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-07-18 18:57:33.231029+00
 340	eng_1752858189446_h495ltan9	AF42_1752864797985	form_complete	2025-07-18 18:57:36.407+00	\N	{"page": "/whatsform/12", "fields": ["name", "email", "whatsapp"], "formName": "whatsform_checkout_form"}	\N	Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-07-18 18:57:36.518595+00
-1258	eng_1757636543744_qznpixz50	AF62_1757638730699	checkout_complete	2025-09-12 00:59:33.971+00	\N	{"page": "/whatsform/46", "value": 300}	187.180.138.168	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	24	2025-09-12 00:59:34.03609+00
-1259	eng_1757636543744_qznpixz50	AF62_1757638730699	negotiation_start	2025-09-12 00:59:33.971+00	\N	{"page": "/whatsform/46", "lead_type": "whatsform", "whatsapp_url": "https://wa.me/5511999999999?text=Ol%C3%A1%20Vim%20atrav%C3%A9s%20de%20uma%20indica%C3%A7%C3%A3o%20com%20um%20cupom%20de%20desconto%20no%20valor%20de%20R%24300.00%20(cupom%20CUPAF62_1757638730699)%0A%0A%F0%9F%93%8B%20*Dados%20para%20contato%3A*%0ANome%3A%20Bob%20Clientes%0AEmail%3A%20bobclientes%40gmail.com%0AWhatsApp%3A%20(11)99100-1664%0A", "contactMethod": "whatsapp", "contact_method": "whatsapp", "discount_amount": 300, "company_whatsapp": "5511999999999"}	187.180.138.168	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	24	2025-09-12 00:59:34.03609+00
 339	eng_1752858189446_h495ltan9	AF42_1752864797985	intention_cta	2025-07-18 18:57:36.404+00	\N	{"page": "/whatsform/12", "value": 300, "cta_type": "whatsform_submit", "form_name": "whatsform_checkout_form", "button_text": "Solicitar Orçamento via WhatsApp", "discount_amount": 300}	\N	Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-07-18 18:57:36.509591+00
 338	eng_1752858189446_h495ltan9	AF42_1752864797985	interaction	2025-07-18 18:57:34.894+00	\N	{"page": "/whatsform/12", "element": "form_field", "section": "whatsapp"}	\N	Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-07-18 18:57:35.001009+00
 341	eng_1752858189446_h495ltan9	AF42_1752864797985	checkout_complete	2025-07-18 18:57:38.064+00	\N	{"page": "/whatsform/12", "value": 300}	\N	Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-07-18 18:57:38.413142+00
@@ -3147,8 +3119,6 @@ COPY "public"."engagement_events" ("id", "session_id", "affiliate_code", "event_
 --
 
 COPY "public"."leads" ("id", "name", "email", "phone", "product_id", "product_name", "affiliate_code", "affiliate_user_id", "company_id", "ip_address", "user_agent", "referrer", "status", "converted", "conversion_date", "created_at", "updated_at") FROM stdin;
-133	Bob Vendas	bobvendas@gmail.com	(11)99100-1663	45	Soul Glass	AF62_1757636384437	62	24	187.180.138.168	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36		converted	t	2025-09-12 00:31:24.451	2025-09-12 00:23:42.434067	2025-09-12 00:31:24.55311
-134	Bob Clientes	bobclientes@gmail.com	(11)99100-1664	46	Cortina de Vidro	AF62_1757638730699	62	24	187.180.138.168	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36		converted	t	2025-09-12 01:02:49.371	2025-09-12 00:59:33.971687	2025-09-12 01:02:49.466172
 \.
 
 
@@ -3193,13 +3163,7 @@ COPY "public"."migrations_log" ("id", "migration_name", "executed_at", "descript
 
 COPY "public"."notifications" ("id", "user_id", "company_id", "title", "message", "type", "read", "data", "created_at", "updated_at") FROM stdin;
 1	2	1	Nova Venda Registrada	Uma nova venda foi registrada no valor de R$ 888.00 para o produto teste	info	f	{"amount": 888.00, "sale_id": 47, "product_name": "teste"}	2025-06-30 23:19:00.989357	2025-06-30 23:19:00.989357
-91	61	24	Nova Venda Registrada	Uma nova venda foi registrada no valor de R$ 2600.00 para o produto Soul Glass	info	t	{"amount": 2600.00, "sale_id": 81, "product_name": "Soul Glass"}	2025-09-12 00:31:23.74462	2025-09-12 00:51:59.488
 4	2	1	Nova Venda Registrada	Uma nova venda foi registrada no valor de R$ 66.41 para o produto teste	info	f	{"amount": 66.41, "sale_id": 48, "product_name": "teste"}	2025-07-04 22:03:47.565784	2025-07-04 22:03:47.565784
-96	62	24	Venda Confirmada!	Sua venda do produto Cortina de Vidro foi confirmada! Comissão: R$ 791.40	success	f	{"sale_id": 82, "product_name": "Cortina de Vidro", "commission_amount": 791.40}	2025-09-12 01:03:09.514551	2025-09-12 01:03:09.514551
-92	62	24	Comissão Calculada	Nova comissão de R$ 78.00 foi calculada para você	success	f	{"amount": 78.00, "commission_id": 57}	2025-09-12 00:33:30.163067	2025-09-12 00:33:30.163067
-93	62	24	Venda Confirmada!	Sua venda do produto Soul Glass foi confirmada! Comissão: R$ 78.00	success	f	{"sale_id": 81, "product_name": "Soul Glass", "commission_amount": 78.00}	2025-09-12 00:33:30.163067	2025-09-12 00:33:30.163067
-95	62	24	Comissão Calculada	Nova comissão de R$ 791.4 foi calculada para você	success	f	{"amount": 791.4, "commission_id": 58}	2025-09-12 01:02:49.146337	2025-09-12 01:02:49.146337
-94	61	24	Nova Venda Registrada	Uma nova venda foi registrada no valor de R$ 26380.00 para o produto Cortina de Vidro	info	t	{"amount": 26380.00, "sale_id": 82, "product_name": "Cortina de Vidro"}	2025-09-12 01:02:48.532243	2025-09-12 01:32:09.188
 \.
 
 
@@ -3225,7 +3189,6 @@ COPY "public"."order_items" ("id", "order_id", "product_id", "quantity", "price_
 --
 
 COPY "public"."payment_receipts" ("id", "payment_id", "file_name", "file_size", "file_type", "file_url", "uploaded_at", "uploaded_by", "company_id") FROM stdin;
-4	28	logo-soul-glass.jpg	5149	image/jpeg	24/28_1757637552732_logo-soul-glass.jpg	2025-09-12 00:39:13.084497	24	24
 \.
 
 
@@ -3234,7 +3197,6 @@ COPY "public"."payment_receipts" ("id", "payment_id", "file_name", "file_size", 
 --
 
 COPY "public"."payments" ("id", "affiliate_user_id", "affiliate_name", "amount", "status", "payment_method", "created_at", "processed_at", "company_id", "updated_at", "description", "notes", "bank_info", "pix_key") FROM stdin;
-28	62	danilo alves	2600.00	processed	PIX	2025-09-12 00:39:12.577	2025-09-12 00:39:12.577	24	2025-09-12 00:39:12.632451	pagamento	afiliadoo	\N	daniloalveskavod@gmail.com
 \.
 
 
@@ -3260,8 +3222,6 @@ COPY "public"."platform_subscriptions_payments" ("id", "company_id", "subscripti
 --
 
 COPY "public"."product_commissions" ("id", "product_id", "type", "value", "created_at", "updated_at") FROM stdin;
-43	45	percentage	3	2025-09-11 23:38:46.796294	2025-09-11 23:38:46.796294
-44	46	percentage	3	2025-09-12 00:56:35.973074	2025-09-12 00:56:35.973074
 \.
 
 
@@ -3270,8 +3230,6 @@ COPY "public"."product_commissions" ("id", "product_id", "type", "value", "creat
 --
 
 COPY "public"."product_discount_settings" ("id", "product_id", "company_id", "discount_type", "discount_value", "max_discount_amount", "created_at", "updated_at") FROM stdin;
-20	45	24	fixed	300	\N	2025-09-11 23:34:18.311188	2025-09-11 23:34:18.311188
-21	46	24	fixed	300	\N	2025-09-12 00:56:53.591247	2025-09-12 00:56:53.591247
 \.
 
 
@@ -3329,7 +3287,6 @@ COPY "public"."user_audit_logs" ("id", "user_id", "action", "changed_by", "old_v
 --
 
 COPY "public"."user_bank_details" ("id", "user_id", "pix_key", "bank_name", "account_details", "created_at", "updated_at") FROM stdin;
-8	62	daniloalveskavod@gmail.com	\N	\N	2025-09-12 01:06:30.042428	2025-09-12 01:06:30.042428
 \.
 
 
@@ -3341,9 +3298,8 @@ COPY "public"."user_cache" ("auth_user_id", "user_id", "role_id", "company_id", 
 11cf6cb0-de2b-4e1c-a9df-b8cb1a9c1000	1	1	\N	superadmin@sistema.com	2025-09-11 21:52:24.669343
 25706d20-3add-409e-b611-867d85bac519	3	3	1	afiliado@teste.com	2025-09-11 22:54:05.618433
 bf9d20ea-6ceb-418b-98f8-cdbec80ba003	2	2	1	admin@empresa.com	2025-09-11 22:54:19.05915
-027b9013-2b30-48bf-91d4-03f79fa74f6a	61	2	24	fernando@genesisx.com.br	2025-09-11 23:26:35.059683
-6b559ac2-c1d8-412d-ab2c-c877f170557c	62	3	24	daniloalveskavod@gmail.com	2025-09-11 23:35:43.462198
 3d3ce7d8-785a-4927-a028-57e295784402	63	2	25	1este@teste.com	2025-10-10 23:18:40.445292
+e2ded763-40c6-4219-bf77-99b0e9edca9a	64	2	27	servingsollutions777@gmail.com	2025-10-24 18:47:52.567534
 \.
 
 
@@ -3431,7 +3387,7 @@ COPY "storage"."s3_multipart_uploads_parts" ("id", "upload_id", "size", "part_nu
 -- Name: refresh_tokens_id_seq; Type: SEQUENCE SET; Schema: auth; Owner: supabase_auth_admin
 --
 
-SELECT pg_catalog.setval('"auth"."refresh_tokens_id_seq"', 1286, true);
+SELECT pg_catalog.setval('"auth"."refresh_tokens_id_seq"', 1292, true);
 
 
 --
@@ -3515,7 +3471,7 @@ SELECT pg_catalog.setval('"public"."affiliate_referrals_id_seq"', 1, false);
 -- Name: companies_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('"public"."companies_id_seq"', 25, true);
+SELECT pg_catalog.setval('"public"."companies_id_seq"', 27, true);
 
 
 --
@@ -3711,7 +3667,7 @@ SELECT pg_catalog.setval('"public"."user_settings_id_seq"', 1, false);
 -- Name: users_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('"public"."users_id_seq"', 63, true);
+SELECT pg_catalog.setval('"public"."users_id_seq"', 64, true);
 
 
 --
@@ -3725,6 +3681,6 @@ SELECT pg_catalog.setval('"public"."withdrawal_requests_id_seq"', 8, true);
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict LnU09vq2fJZe0BAnzBI7D6EjZgGgJdjthOUPA9HVwxG66TZdlM4EgLEzNZblRjX
+-- \unrestrict 9Fam8NM6P9BFI4rbI091r9KR6MOHEMMnceFc5ZEPsiTTiBcNgONkusLVMgr1bfm
 
 RESET ALL;
