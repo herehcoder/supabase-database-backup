@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict BAarD3sHPUxF7TvlC4socM2I5408iWHIu996jyZ6Cd2a1tYwQZ58BPQLS2tQ9yE
+-- \restrict NueGdwjcc2djv1wg4g5FSqYciCoikyzb2x9ocWJHcy4k4uIFStTpbLXB60Ha4l3
 
 -- Dumped from database version 17.4
 -- Dumped by pg_dump version 17.6
@@ -2200,6 +2200,8 @@ COPY "auth"."audit_log_entries" ("instance_id", "id", "payload", "created_at", "
 00000000-0000-0000-0000-000000000000	16ed2e34-0156-4e2c-93e9-1ddacc680999	{"action":"token_revoked","actor_id":"027b9013-2b30-48bf-91d4-03f79fa74f6a","actor_username":"fernando@genesisx.com.br","actor_via_sso":false,"log_type":"token"}	2025-11-03 00:51:14.184978+00	
 00000000-0000-0000-0000-000000000000	3062f9e4-5bb8-4644-9f4e-87a1436a3f3b	{"action":"token_refreshed","actor_id":"027b9013-2b30-48bf-91d4-03f79fa74f6a","actor_username":"fernando@genesisx.com.br","actor_via_sso":false,"log_type":"token"}	2025-11-03 02:43:58.413354+00	
 00000000-0000-0000-0000-000000000000	59c14ec8-2f77-4542-aa43-a355ce8ae355	{"action":"token_revoked","actor_id":"027b9013-2b30-48bf-91d4-03f79fa74f6a","actor_username":"fernando@genesisx.com.br","actor_via_sso":false,"log_type":"token"}	2025-11-03 02:43:58.433461+00	
+00000000-0000-0000-0000-000000000000	84636a67-d924-464c-9de3-b1407aea3dc4	{"action":"login","actor_id":"25706d20-3add-409e-b611-867d85bac519","actor_username":"afiliado@teste.com","actor_via_sso":false,"log_type":"account","traits":{"provider":"email"}}	2025-11-04 17:58:06.330599+00	
+00000000-0000-0000-0000-000000000000	e5be3e97-d757-445f-a3a0-74b0750534c2	{"action":"login","actor_id":"bf9d20ea-6ceb-418b-98f8-cdbec80ba003","actor_username":"admin@empresa.com","actor_via_sso":false,"log_type":"account","traits":{"provider":"email"}}	2025-11-04 17:59:05.895534+00	
 \.
 
 
@@ -2216,13 +2218,13 @@ COPY "auth"."flow_state" ("id", "user_id", "auth_code", "code_challenge_method",
 --
 
 COPY "auth"."users" ("instance_id", "id", "aud", "role", "email", "encrypted_password", "email_confirmed_at", "invited_at", "confirmation_token", "confirmation_sent_at", "recovery_token", "recovery_sent_at", "email_change_token_new", "email_change", "email_change_sent_at", "last_sign_in_at", "raw_app_meta_data", "raw_user_meta_data", "is_super_admin", "created_at", "updated_at", "phone", "phone_confirmed_at", "phone_change", "phone_change_token", "phone_change_sent_at", "email_change_token_current", "email_change_confirm_status", "banned_until", "reauthentication_token", "reauthentication_sent_at", "is_sso_user", "deleted_at", "is_anonymous") FROM stdin;
-00000000-0000-0000-0000-000000000000	bf9d20ea-6ceb-418b-98f8-cdbec80ba003	authenticated	authenticated	admin@empresa.com	$2a$10$kF1cBkzywSPO9RqdgoTjMeX0YSrYnDG3Z6tRXmTwoQjfyyInV96u.	2025-06-22 01:25:42.132818+00	\N		\N		\N			\N	2025-07-04 22:13:53.0475+00	{"provider": "email", "providers": ["email"]}	{"name": "Admin da Empresa", "email_verified": true}	\N	2025-06-22 01:25:42.128946+00	2025-10-17 19:59:21.618622+00	\N	\N			\N		0	\N		\N	f	\N	f
+00000000-0000-0000-0000-000000000000	bf9d20ea-6ceb-418b-98f8-cdbec80ba003	authenticated	authenticated	admin@empresa.com	$2a$10$kF1cBkzywSPO9RqdgoTjMeX0YSrYnDG3Z6tRXmTwoQjfyyInV96u.	2025-06-22 01:25:42.132818+00	\N		\N		\N			\N	2025-11-04 17:59:05.90009+00	{"provider": "email", "providers": ["email"]}	{"name": "Admin da Empresa", "email_verified": true}	\N	2025-06-22 01:25:42.128946+00	2025-11-04 17:59:05.90883+00	\N	\N			\N		0	\N		\N	f	\N	f
 00000000-0000-0000-0000-000000000000	517ea729-c38f-44e8-a303-c4b057b92912	authenticated	authenticated	user@teste.com	$2a$10$OkRfuykxBQLqR5Ev1lru3.G0UHT7.G/N2R732DirgFSi2NRkcL63C	2025-06-22 01:25:42.472075+00	\N		\N		\N			\N	\N	{"provider": "email", "providers": ["email"]}	{"name": "Usuário Teste", "email_verified": true}	\N	2025-06-22 01:25:42.467601+00	2025-06-22 01:25:42.472758+00	\N	\N			\N		0	\N		\N	f	\N	f
 00000000-0000-0000-0000-000000000000	3d3ce7d8-785a-4927-a028-57e295784402	authenticated	authenticated	1este@teste.com	$2a$10$By3.Tw.M8iCDp.0vSMEpg.KImfg9nuFVe4.QnkO.S5P0eru6RnVE6	2025-10-10 23:18:39.948933+00	\N		\N		\N			\N	2025-10-18 19:45:13.808753+00	{"provider": "email", "providers": ["email"]}	{"sub": "3d3ce7d8-785a-4927-a028-57e295784402", "name": "teste", "email": "1este@teste.com", "userType": "empresa", "email_verified": true, "phone_verified": false}	\N	2025-10-10 23:18:39.919864+00	2025-10-25 19:50:48.392546+00	\N	\N			\N		0	\N		\N	f	\N	f
 00000000-0000-0000-0000-000000000000	f5c98058-c727-480e-ae83-d4f42c6fc459	authenticated	authenticated	teste3@gmail.com	$2a$10$ayZ8/vqy4YhSz/pHmXjbV.7JLcji7ft3aZus48PO1gfzIVFVOlo3G	2025-10-25 20:27:40.65047+00	\N		\N		\N			\N	2025-10-25 20:28:25.971711+00	{"provider": "email", "providers": ["email"]}	{"sub": "f5c98058-c727-480e-ae83-d4f42c6fc459", "name": "teste3@gmail.com", "email": "teste3@gmail.com", "email_verified": true, "phone_verified": false}	\N	2025-10-25 20:27:40.623765+00	2025-11-02 03:29:06.741337+00	\N	\N			\N		0	\N		\N	f	\N	f
 00000000-0000-0000-0000-000000000000	6b559ac2-c1d8-412d-ab2c-c877f170557c	authenticated	authenticated	daniloalveskavod@gmail.com	$2a$10$1DBzf1wOZ.bbU0LdyEFMiugAi9i2amkpkwZUyNjWMKrEuTP1bWNli	2025-09-11 23:35:43.311077+00	\N		\N		\N			\N	2025-09-12 00:57:29.260311+00	{"provider": "email", "providers": ["email"]}	{"sub": "6b559ac2-c1d8-412d-ab2c-c877f170557c", "name": "danilo alves", "email": "daniloalveskavod@gmail.com", "email_verified": true, "phone_verified": false}	\N	2025-09-11 23:35:43.258374+00	2025-11-02 22:00:23.550176+00	\N	\N			\N		0	\N		\N	f	\N	f
 00000000-0000-0000-0000-000000000000	11cf6cb0-de2b-4e1c-a9df-b8cb1a9c1000	authenticated	authenticated	superadmin@sistema.com	$2a$10$ORtaDdYM29r1TLyo.nRMaOgg.F0GWeBWTlyIAUDq7RJ2.CON9r/s.	2025-06-22 01:25:41.937486+00	\N		\N		\N			\N	2025-10-24 13:39:27.753577+00	{"provider": "email", "providers": ["email"]}	{"name": "Super Admin", "email_verified": true}	\N	2025-06-22 01:25:41.917945+00	2025-10-26 02:47:08.394646+00	\N	\N			\N		0	\N		\N	f	\N	f
-00000000-0000-0000-0000-000000000000	25706d20-3add-409e-b611-867d85bac519	authenticated	authenticated	afiliado@teste.com	$2a$10$yM74O5Mf7V3xDYl0b2VCA.134vb9AAXuA4GEDjEBD.bPJVA8930hK	2025-06-22 01:25:42.314638+00	\N		\N		\N			\N	2025-07-04 22:02:06.185737+00	{"provider": "email", "providers": ["email"]}	{"name": "Afiliado Teste", "email_verified": true}	\N	2025-06-22 01:25:42.3117+00	2025-08-17 01:37:09.380237+00	\N	\N			\N		0	\N		\N	f	\N	f
+00000000-0000-0000-0000-000000000000	25706d20-3add-409e-b611-867d85bac519	authenticated	authenticated	afiliado@teste.com	$2a$10$yM74O5Mf7V3xDYl0b2VCA.134vb9AAXuA4GEDjEBD.bPJVA8930hK	2025-06-22 01:25:42.314638+00	\N		\N		\N			\N	2025-11-04 17:58:06.352307+00	{"provider": "email", "providers": ["email"]}	{"name": "Afiliado Teste", "email_verified": true}	\N	2025-06-22 01:25:42.3117+00	2025-11-04 17:58:06.41573+00	\N	\N			\N		0	\N		\N	f	\N	f
 00000000-0000-0000-0000-000000000000	e2ded763-40c6-4219-bf77-99b0e9edca9a	authenticated	authenticated	servingsollutions777@gmail.com	$2a$10$2f4ckLgPLql7JUcxsxGIQO5Mg6puMLgIYvpnF1JbJwPbTtcq/S9D6	2025-10-24 18:47:52.192764+00	\N		\N		\N			\N	2025-10-24 18:47:52.200202+00	{"provider": "email", "providers": ["email"]}	{"sub": "e2ded763-40c6-4219-bf77-99b0e9edca9a", "name": "Fernando Sultano", "email": "servingsollutions777@gmail.com", "userType": "empresa", "email_verified": true, "phone_verified": false}	\N	2025-10-24 18:47:52.12006+00	2025-10-25 05:25:59.726334+00	\N	\N			\N		0	\N		\N	f	\N	f
 00000000-0000-0000-0000-000000000000	85e8c8b0-2734-4635-b255-26f1dec33ea5	authenticated	authenticated	teste@teste.com	$2a$10$OwOZHgjaVlwyIaIFkPwu9ukLaVrTbIJXrIVJn22mJSZAfS6P98N86	2025-06-28 22:33:12.891678+00	\N		\N		\N			\N	2025-09-11 22:42:19.578595+00	{"provider": "email", "providers": ["email"]}	{"sub": "85e8c8b0-2734-4635-b255-26f1dec33ea5", "name": "teste", "email": "teste@teste.com", "email_verified": true, "phone_verified": false}	\N	2025-06-28 22:33:12.864315+00	2025-09-11 22:42:19.591572+00	\N	\N			\N		0	\N		\N	f	\N	f
 00000000-0000-0000-0000-000000000000	04ba785f-2c7e-4e9d-a672-4a370c36c539	authenticated	authenticated	teste2@gmail.com	$2a$10$.f983U4U/7gUo8QbajR9xewQ.9PqUGMu7pF1vBHTW8sRY6Yn3dnme	2025-10-25 19:58:36.328923+00	\N		\N		\N			\N	2025-10-25 20:26:49.42978+00	{"provider": "email", "providers": ["email"]}	{"sub": "04ba785f-2c7e-4e9d-a672-4a370c36c539", "name": "teste2", "email": "teste2@gmail.com", "email_verified": true, "phone_verified": false}	\N	2025-10-25 19:58:36.294833+00	2025-10-25 20:26:49.460379+00	\N	\N			\N		0	\N		\N	f	\N	f
@@ -2402,6 +2404,8 @@ c300c6b0-770c-460f-96e9-9c83b8c0dc58	25706d20-3add-409e-b611-867d85bac519	2025-0
 173de789-dc64-40ea-86d2-a2959e104dce	027b9013-2b30-48bf-91d4-03f79fa74f6a	2025-09-12 01:38:03.78105+00	2025-09-12 03:34:52.756968+00	\N	aal1	\N	2025-09-12 03:34:52.75688	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	187.180.138.168	\N
 c91cc1a1-8d42-4f4b-9e53-3f241c9c973d	3d3ce7d8-785a-4927-a028-57e295784402	2025-10-18 19:45:13.811551+00	2025-10-25 19:50:48.393573+00	\N	aal1	\N	2025-10-25 19:50:48.393505	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36	179.111.109.217	\N
 759951d8-3a68-4ba7-b0fc-b90e83606d5c	027b9013-2b30-48bf-91d4-03f79fa74f6a	2025-09-11 23:59:55.22729+00	2025-10-29 23:50:52.991619+00	\N	aal1	\N	2025-10-29 23:50:52.991546	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36	187.180.138.168	\N
+60933842-60b8-4f20-bb38-f0408e66d9f3	25706d20-3add-409e-b611-867d85bac519	2025-11-04 17:58:06.352418+00	2025-11-04 17:58:06.352418+00	\N	aal1	\N	\N	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36	201.87.95.226	\N
+76082a57-4797-4132-8ebd-dc4409dbcd99	bf9d20ea-6ceb-418b-98f8-cdbec80ba003	2025-11-04 17:59:05.90076+00	2025-11-04 17:59:05.90076+00	\N	aal1	\N	\N	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36	201.87.95.226	\N
 83bc065a-17f3-49ce-b5c3-3d56caf4de24	bf9d20ea-6ceb-418b-98f8-cdbec80ba003	2025-07-04 22:13:53.047584+00	2025-07-18 18:44:52.316425+00	\N	aal1	\N	2025-07-18 18:44:52.316359	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36	201.27.155.232	\N
 bda6ca03-c5f0-4915-b304-3b300280700a	027b9013-2b30-48bf-91d4-03f79fa74f6a	2025-09-11 23:28:56.109431+00	2025-09-11 23:28:56.109431+00	\N	aal1	\N	\N	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	187.180.138.168	\N
 694cf1f8-5bce-4f3d-b266-8de9da2eacfe	11cf6cb0-de2b-4e1c-a9df-b8cb1a9c1000	2025-09-12 00:05:28.481996+00	2025-09-12 00:05:28.481996+00	\N	aal1	\N	\N	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36	187.180.138.168	\N
@@ -2563,6 +2567,8 @@ c2a4e4c1-d2b9-4912-a57a-cfd429c2f455	2025-09-12 00:12:14.364577+00	2025-09-12 00
 838bba93-e2ba-44fa-bf7b-ad3a731734a8	2025-09-12 00:57:29.299668+00	2025-09-12 00:57:29.299668+00	password	d67ba330-918b-43d4-bbb9-80fc727bbf7d
 173de789-dc64-40ea-86d2-a2959e104dce	2025-09-12 01:38:03.793396+00	2025-09-12 01:38:03.793396+00	password	29252586-75af-4eef-82bd-f6d8098bdb54
 e85670a7-0b35-42df-be0b-3b6fec67bf1d	2025-10-24 18:47:52.235311+00	2025-10-24 18:47:52.235311+00	password	3ebf6621-e605-4288-a2d8-89f1542029cc
+60933842-60b8-4f20-bb38-f0408e66d9f3	2025-11-04 17:58:06.423183+00	2025-11-04 17:58:06.423183+00	password	02fad731-f707-49c1-a9c4-a4921c271527
+76082a57-4797-4132-8ebd-dc4409dbcd99	2025-11-04 17:59:05.909171+00	2025-11-04 17:59:05.909171+00	password	307d62b7-eadd-4197-a8eb-f830f821467d
 c954168b-fa8f-45bc-a0e2-05beaf058d20	2025-09-11 22:42:19.592844+00	2025-09-11 22:42:19.592844+00	password	7d5b8f5b-27f2-4f56-bb68-61f3de6883fa
 \.
 
@@ -2924,7 +2930,9 @@ COPY "auth"."refresh_tokens" ("instance_id", "id", "token", "user_id", "revoked"
 00000000-0000-0000-0000-000000000000	862	6owha6gdgiv3	25706d20-3add-409e-b611-867d85bac519	t	2025-08-17 00:38:39.071258+00	2025-08-17 01:37:09.35734+00	f6n7zh2vucns	bd4d4532-24f0-490e-8bd5-08b80b5e726b
 00000000-0000-0000-0000-000000000000	1294	b3xo3eyot4xc	e2ded763-40c6-4219-bf77-99b0e9edca9a	t	2025-10-25 03:30:07.538842+00	2025-10-25 05:25:59.702275+00	e4hjwie6gciq	e85670a7-0b35-42df-be0b-3b6fec67bf1d
 00000000-0000-0000-0000-000000000000	1312	etkhz2vowkch	027b9013-2b30-48bf-91d4-03f79fa74f6a	t	2025-10-29 21:25:05.678184+00	2025-10-29 22:30:39.70779+00	pzw4vqdp7uxb	759951d8-3a68-4ba7-b0fc-b90e83606d5c
+00000000-0000-0000-0000-000000000000	1325	e2kcnfb27u27	25706d20-3add-409e-b611-867d85bac519	f	2025-11-04 17:58:06.382063+00	2025-11-04 17:58:06.382063+00	\N	60933842-60b8-4f20-bb38-f0408e66d9f3
 00000000-0000-0000-0000-000000000000	846	fw6bcapa6pbv	bf9d20ea-6ceb-418b-98f8-cdbec80ba003	t	2025-08-07 15:16:23.636186+00	2025-08-07 16:16:26.497589+00	5mx2bmfdwcyo	25ba5b8f-72c4-40e4-8e58-ee6f237314f1
+00000000-0000-0000-0000-000000000000	1326	scjzdfth5ei7	bf9d20ea-6ceb-418b-98f8-cdbec80ba003	f	2025-11-04 17:59:05.903388+00	2025-11-04 17:59:05.903388+00	\N	76082a57-4797-4132-8ebd-dc4409dbcd99
 \.
 
 
@@ -3085,6 +3093,7 @@ COPY "public"."affiliate_conversions" ("id", "affiliate_link_id", "user_id", "co
 --
 
 COPY "public"."affiliate_invitations" ("id", "company_id", "token", "email", "created_by", "expires_at", "used_at", "used_by", "status", "created_at", "updated_at") FROM stdin;
+60	1	3875d5e10e237bdc5014174e95cf8e9c	\N	2	2025-11-11 17:59:15.765548+00	\N	\N	pending	2025-11-04 17:59:15.765548+00	2025-11-04 17:59:15.765548+00
 \.
 
 
@@ -3515,7 +3524,7 @@ COPY "storage"."s3_multipart_uploads_parts" ("id", "upload_id", "size", "part_nu
 -- Name: refresh_tokens_id_seq; Type: SEQUENCE SET; Schema: auth; Owner: supabase_auth_admin
 --
 
-SELECT pg_catalog.setval('"auth"."refresh_tokens_id_seq"', 1324, true);
+SELECT pg_catalog.setval('"auth"."refresh_tokens_id_seq"', 1326, true);
 
 
 --
@@ -3557,7 +3566,7 @@ SELECT pg_catalog.setval('"public"."affiliate_conversions_id_seq"', 18, true);
 -- Name: affiliate_invitations_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('"public"."affiliate_invitations_id_seq"', 59, true);
+SELECT pg_catalog.setval('"public"."affiliate_invitations_id_seq"', 60, true);
 
 
 --
@@ -3809,6 +3818,6 @@ SELECT pg_catalog.setval('"public"."withdrawal_requests_id_seq"', 8, true);
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict BAarD3sHPUxF7TvlC4socM2I5408iWHIu996jyZ6Cd2a1tYwQZ58BPQLS2tQ9yE
+-- \unrestrict NueGdwjcc2djv1wg4g5FSqYciCoikyzb2x9ocWJHcy4k4uIFStTpbLXB60Ha4l3
 
 RESET ALL;
