@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict gxZc3eA0hERfp6EHboJ6UecSAeIcKDcOYrRowlpRaFSf3sSh0Pb0mYBQfPnYSee
+-- \restrict ZfNWwjmA4WhSbmo7RbbnmhZFHLS0BEaKTxDMAUvAEMThqiIYPVzVVu6HfHYKkPe
 
 -- Dumped from database version 17.4
 -- Dumped by pg_dump version 17.6
@@ -2612,6 +2612,14 @@ COPY "auth"."oauth_authorizations" ("id", "authorization_id", "client_id", "user
 
 
 --
+-- Data for Name: oauth_client_states; Type: TABLE DATA; Schema: auth; Owner: supabase_auth_admin
+--
+
+COPY "auth"."oauth_client_states" ("id", "provider_type", "code_verifier", "created_at") FROM stdin;
+\.
+
+
+--
 -- Data for Name: oauth_consents; Type: TABLE DATA; Schema: auth; Owner: supabase_auth_admin
 --
 
@@ -3858,6 +3866,6 @@ SELECT pg_catalog.setval('"public"."withdrawal_requests_id_seq"', 8, true);
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict gxZc3eA0hERfp6EHboJ6UecSAeIcKDcOYrRowlpRaFSf3sSh0Pb0mYBQfPnYSee
+-- \unrestrict ZfNWwjmA4WhSbmo7RbbnmhZFHLS0BEaKTxDMAUvAEMThqiIYPVzVVu6HfHYKkPe
 
 RESET ALL;
