@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict 8sOQHN6W6ydOh63tMjmXh6FAvnDIX5vfbCSIl971It4HhpJ6R1S7p3yebo66MWt
+-- \restrict MDTU3H14O0YtsnW1Tc12CjmfZ53q5abGi7LuK01RG55RHOzpXFGdILTyKzOnCZ8
 
 -- Dumped from database version 17.4
 -- Dumped by pg_dump version 17.6
@@ -2229,7 +2229,7 @@ COPY "auth"."audit_log_entries" ("instance_id", "id", "payload", "created_at", "
 -- Data for Name: flow_state; Type: TABLE DATA; Schema: auth; Owner: supabase_auth_admin
 --
 
-COPY "auth"."flow_state" ("id", "user_id", "auth_code", "code_challenge_method", "code_challenge", "provider_type", "provider_access_token", "provider_refresh_token", "created_at", "updated_at", "authentication_method", "auth_code_issued_at") FROM stdin;
+COPY "auth"."flow_state" ("id", "user_id", "auth_code", "code_challenge_method", "code_challenge", "provider_type", "provider_access_token", "provider_refresh_token", "created_at", "updated_at", "authentication_method", "auth_code_issued_at", "invite_token", "referrer", "oauth_client_state_id", "linking_target_id", "email_optional") FROM stdin;
 \.
 
 
@@ -2283,7 +2283,7 @@ COPY "auth"."instances" ("id", "uuid", "raw_base_config", "created_at", "updated
 -- Data for Name: oauth_clients; Type: TABLE DATA; Schema: auth; Owner: supabase_auth_admin
 --
 
-COPY "auth"."oauth_clients" ("id", "client_secret_hash", "registration_type", "redirect_uris", "grant_types", "client_name", "client_uri", "logo_uri", "created_at", "updated_at", "deleted_at", "client_type") FROM stdin;
+COPY "auth"."oauth_clients" ("id", "client_secret_hash", "registration_type", "redirect_uris", "grant_types", "client_name", "client_uri", "logo_uri", "created_at", "updated_at", "deleted_at", "client_type", "token_endpoint_auth_method") FROM stdin;
 \.
 
 
@@ -3866,6 +3866,6 @@ SELECT pg_catalog.setval('"public"."withdrawal_requests_id_seq"', 8, true);
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict 8sOQHN6W6ydOh63tMjmXh6FAvnDIX5vfbCSIl971It4HhpJ6R1S7p3yebo66MWt
+-- \unrestrict MDTU3H14O0YtsnW1Tc12CjmfZ53q5abGi7LuK01RG55RHOzpXFGdILTyKzOnCZ8
 
 RESET ALL;
