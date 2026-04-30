@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict uPhuiyYgFa9SKwmKcoL1XAg7dLatNj3pPl5HXLkSskIpFhHk1tQsLo1Gm7Bp9mM
+-- \restrict 8uzwNMuPm3qsO1Y4nZWDRuRu6P3Vv3dF9EvtD6ZFXWw2vw5uiYqq87Kah0LdAdn
 
 -- Dumped from database version 17.4
 -- Dumped by pg_dump version 17.6
@@ -3533,7 +3533,15 @@ platform-logos	platform-logos	\N	2025-06-26 00:50:51.900734+00	2025-06-26 00:50:
 -- Data for Name: buckets_analytics; Type: TABLE DATA; Schema: storage; Owner: supabase_storage_admin
 --
 
-COPY "storage"."buckets_analytics" ("id", "type", "format", "created_at", "updated_at") FROM stdin;
+COPY "storage"."buckets_analytics" ("name", "type", "format", "created_at", "updated_at", "id", "deleted_at") FROM stdin;
+\.
+
+
+--
+-- Data for Name: buckets_vectors; Type: TABLE DATA; Schema: storage; Owner: supabase_storage_admin
+--
+
+COPY "storage"."buckets_vectors" ("id", "type", "created_at", "updated_at") FROM stdin;
 \.
 
 
@@ -3541,38 +3549,22 @@ COPY "storage"."buckets_analytics" ("id", "type", "format", "created_at", "updat
 -- Data for Name: objects; Type: TABLE DATA; Schema: storage; Owner: supabase_storage_admin
 --
 
-COPY "storage"."objects" ("id", "bucket_id", "name", "owner", "created_at", "updated_at", "last_accessed_at", "metadata", "version", "owner_id", "user_metadata", "level") FROM stdin;
-e8a1d1b4-00bf-48f0-b887-a8300870e132	product-images	company-24/837cec26-4f7e-47aa-bedc-feda02b115ed.jpg	027b9013-2b30-48bf-91d4-03f79fa74f6a	2025-09-11 23:30:53.898271+00	2025-09-11 23:30:53.898271+00	2025-09-11 23:30:53.898271+00	{"eTag": "\\"368c1123897acd18a662c3eaf5ce80f8\\"", "size": 5149, "mimetype": "image/jpeg", "cacheControl": "max-age=3600", "lastModified": "2025-09-11T23:30:54.000Z", "contentLength": 5149, "httpStatusCode": 200}	6710b12c-d398-41d8-9934-b39b33ebf7b0	027b9013-2b30-48bf-91d4-03f79fa74f6a	{}	2
-8e6ffd9a-051a-48a3-856d-849d99703e8c	product-images	company-25/2a81e7c3-9b9e-44d2-8da9-35303a2c2b3c.png	3d3ce7d8-785a-4927-a028-57e295784402	2025-10-25 20:14:14.017695+00	2025-10-25 20:14:14.017695+00	2025-10-25 20:14:14.017695+00	{"eTag": "\\"64e3690acbe3119a40d13b21e7c68afb\\"", "size": 125035, "mimetype": "image/png", "cacheControl": "max-age=3600", "lastModified": "2025-10-25T20:14:14.000Z", "contentLength": 125035, "httpStatusCode": 200}	3ff91f2a-d1dc-4b31-a2e8-af5ceeb697af	3d3ce7d8-785a-4927-a028-57e295784402	{}	2
-225ddf59-1486-411b-891b-09060ecf3a75	company-logos	company-1-1750902575044.png	bf9d20ea-6ceb-418b-98f8-cdbec80ba003	2025-06-26 01:49:36.22845+00	2025-08-26 14:54:36.002084+00	2025-06-26 01:49:36.22845+00	{"eTag": "\\"11b1c9c764fd4d7719ed7318b3bcee09\\"", "size": 4452, "mimetype": "image/png", "cacheControl": "max-age=3600", "lastModified": "2025-06-26T01:49:37.000Z", "contentLength": 4452, "httpStatusCode": 200}	348d91b6-0ad2-4680-ab39-88b8a53f369a	bf9d20ea-6ceb-418b-98f8-cdbec80ba003	{}	1
-9d8903db-4bd2-4581-a29a-1e6e0375c719	company-logos	company-1-1750904763836.png	bf9d20ea-6ceb-418b-98f8-cdbec80ba003	2025-06-26 02:26:05.077494+00	2025-08-26 14:54:36.002084+00	2025-06-26 02:26:05.077494+00	{"eTag": "\\"d099b0ec0d9477197407c05f2550281b\\"", "size": 9549, "mimetype": "image/png", "cacheControl": "max-age=3600", "lastModified": "2025-06-26T02:26:06.000Z", "contentLength": 9549, "httpStatusCode": 200}	6bf99dc0-798b-437e-ac9c-40efa6cbc47f	bf9d20ea-6ceb-418b-98f8-cdbec80ba003	{}	1
-97cb9042-417b-4e47-9d53-bac91863286f	platform-logos	platform-1750905232370.png	11cf6cb0-de2b-4e1c-a9df-b8cb1a9c1000	2025-06-26 02:33:53.698176+00	2025-08-26 14:54:36.002084+00	2025-06-26 02:33:53.698176+00	{"eTag": "\\"d099b0ec0d9477197407c05f2550281b\\"", "size": 9549, "mimetype": "image/png", "cacheControl": "max-age=3600", "lastModified": "2025-06-26T02:33:54.000Z", "contentLength": 9549, "httpStatusCode": 200}	c7119b7a-e964-4fc6-980d-f6280578b656	11cf6cb0-de2b-4e1c-a9df-b8cb1a9c1000	{}	1
-e4f94c79-4142-4550-975d-212548e87112	platform-logos	platform-1750905241380.png	11cf6cb0-de2b-4e1c-a9df-b8cb1a9c1000	2025-06-26 02:34:02.674599+00	2025-08-26 14:54:36.002084+00	2025-06-26 02:34:02.674599+00	{"eTag": "\\"d099b0ec0d9477197407c05f2550281b\\"", "size": 9549, "mimetype": "image/png", "cacheControl": "max-age=3600", "lastModified": "2025-06-26T02:34:03.000Z", "contentLength": 9549, "httpStatusCode": 200}	6a83aece-00c4-4dcf-b39d-1d159e41d065	11cf6cb0-de2b-4e1c-a9df-b8cb1a9c1000	{}	1
-83cbf025-1d25-4141-9d9a-312c17d02f2c	payment-receipts	24/28_1757637552732_logo-soul-glass.jpg	027b9013-2b30-48bf-91d4-03f79fa74f6a	2025-09-12 00:39:12.988983+00	2025-09-12 00:39:12.988983+00	2025-09-12 00:39:12.988983+00	{"eTag": "\\"368c1123897acd18a662c3eaf5ce80f8\\"", "size": 5149, "mimetype": "image/jpeg", "cacheControl": "max-age=3600", "lastModified": "2025-09-12T00:39:13.000Z", "contentLength": 5149, "httpStatusCode": 200}	9075d850-cbb2-41dc-a68d-1b2cf744b8ae	027b9013-2b30-48bf-91d4-03f79fa74f6a	{}	2
-66d016ea-65b5-4de6-8bb2-7a19e7e02194	product-images	company-24/675eae9f-d8f3-4ba9-904e-487f5ba452e1.jpg	027b9013-2b30-48bf-91d4-03f79fa74f6a	2025-09-12 00:55:28.472255+00	2025-09-12 00:55:28.472255+00	2025-09-12 00:55:28.472255+00	{"eTag": "\\"368c1123897acd18a662c3eaf5ce80f8\\"", "size": 5149, "mimetype": "image/jpeg", "cacheControl": "max-age=3600", "lastModified": "2025-09-12T00:55:29.000Z", "contentLength": 5149, "httpStatusCode": 200}	16a9eeab-80bf-4452-8782-0f63e8d10c30	027b9013-2b30-48bf-91d4-03f79fa74f6a	{}	2
-b3230c2f-5d46-4aa3-8f65-907c4fa8f72f	product-images	company-25/d73a0f78-fed1-4f27-8df2-3c3b9657018a.png	3d3ce7d8-785a-4927-a028-57e295784402	2025-10-25 20:27:04.904499+00	2025-10-25 20:27:04.904499+00	2025-10-25 20:27:04.904499+00	{"eTag": "\\"64e3690acbe3119a40d13b21e7c68afb\\"", "size": 125035, "mimetype": "image/png", "cacheControl": "max-age=3600", "lastModified": "2025-10-25T20:27:05.000Z", "contentLength": 125035, "httpStatusCode": 200}	348ed79b-b1f6-4292-a061-9aac2db38e28	3d3ce7d8-785a-4927-a028-57e295784402	{}	2
-10fa5a75-610c-45a1-8b60-ce47ca910484	platform-logos	platform-1757597080763.png	11cf6cb0-de2b-4e1c-a9df-b8cb1a9c1000	2025-09-11 13:24:41.058128+00	2025-09-11 13:24:41.058128+00	2025-09-11 13:24:41.058128+00	{"eTag": "\\"8b5b4cdd06a45fe72d4bb107013ffc39\\"", "size": 3588, "mimetype": "image/png", "cacheControl": "max-age=3600", "lastModified": "2025-09-11T13:24:42.000Z", "contentLength": 3588, "httpStatusCode": 200}	81800035-1877-417a-9ddc-30af258e8f27	11cf6cb0-de2b-4e1c-a9df-b8cb1a9c1000	{}	1
-126d91ba-fe5a-4473-8f83-d3971ab8ebcd	product-images	company-17/.emptyFolderPlaceholder	\N	2025-09-11 22:46:47.318949+00	2025-09-11 22:46:47.318949+00	2025-09-11 22:46:47.318949+00	{"eTag": "\\"d41d8cd98f00b204e9800998ecf8427e\\"", "size": 0, "mimetype": "application/octet-stream", "cacheControl": "max-age=3600", "lastModified": "2025-09-11T22:46:47.319Z", "contentLength": 0, "httpStatusCode": 200}	4c19895f-6759-4972-b118-f59b940a00fd	\N	{}	2
-5de27bdd-95e1-4c1a-9fb5-94d6ec7fbfc2	product-images	company-21/.emptyFolderPlaceholder	\N	2025-09-11 22:46:58.650271+00	2025-09-11 22:46:58.650271+00	2025-09-11 22:46:58.650271+00	{"eTag": "\\"d41d8cd98f00b204e9800998ecf8427e\\"", "size": 0, "mimetype": "application/octet-stream", "cacheControl": "max-age=3600", "lastModified": "2025-09-11T22:46:58.650Z", "contentLength": 0, "httpStatusCode": 200}	e7d4732c-0f67-44d1-b853-fc376706bc2a	\N	{}	2
-72b271db-c68e-4836-89a9-22cd55823dcf	product-images	company-23/.emptyFolderPlaceholder	\N	2025-09-11 22:47:09.078781+00	2025-09-11 22:47:09.078781+00	2025-09-11 22:47:09.078781+00	{"eTag": "\\"d41d8cd98f00b204e9800998ecf8427e\\"", "size": 0, "mimetype": "application/octet-stream", "cacheControl": "max-age=3600", "lastModified": "2025-09-11T22:47:09.079Z", "contentLength": 0, "httpStatusCode": 200}	57b9a386-ee42-4b1c-837f-804f7a8c88f2	\N	{}	2
-cb4e6af1-b194-4296-926e-cb164e48f80e	payment-receipts	17/.emptyFolderPlaceholder	\N	2025-09-11 22:47:38.161108+00	2025-09-11 22:47:38.161108+00	2025-09-11 22:47:38.161108+00	{"eTag": "\\"d41d8cd98f00b204e9800998ecf8427e\\"", "size": 0, "mimetype": "application/octet-stream", "cacheControl": "max-age=3600", "lastModified": "2025-09-11T22:47:38.160Z", "contentLength": 0, "httpStatusCode": 200}	55b577df-4cf8-4048-9363-8d4d3a2acb12	\N	{}	2
-ea16d045-3127-4475-a542-79c39fca777e	payment-receipts	9/.emptyFolderPlaceholder	\N	2025-09-11 22:48:00.919643+00	2025-09-11 22:48:00.919643+00	2025-09-11 22:48:00.919643+00	{"eTag": "\\"d41d8cd98f00b204e9800998ecf8427e\\"", "size": 0, "mimetype": "application/octet-stream", "cacheControl": "max-age=3600", "lastModified": "2025-09-11T22:48:00.919Z", "contentLength": 0, "httpStatusCode": 200}	0c60d738-3c19-4f7c-a15e-04d95ff7d14a	\N	{}	2
-\.
-
-
---
--- Data for Name: prefixes; Type: TABLE DATA; Schema: storage; Owner: supabase_storage_admin
---
-
-COPY "storage"."prefixes" ("bucket_id", "name", "created_at", "updated_at") FROM stdin;
-product-images	company-17	2025-09-09 05:19:00.588534+00	2025-09-09 05:19:00.588534+00
-product-images	company-21	2025-09-11 22:46:58.650271+00	2025-09-11 22:46:58.650271+00
-product-images	company-23	2025-09-11 22:47:09.078781+00	2025-09-11 22:47:09.078781+00
-payment-receipts	17	2025-09-11 22:47:38.161108+00	2025-09-11 22:47:38.161108+00
-payment-receipts	9	2025-09-11 22:48:00.919643+00	2025-09-11 22:48:00.919643+00
-product-images	company-24	2025-09-11 23:30:53.898271+00	2025-09-11 23:30:53.898271+00
-payment-receipts	24	2025-09-12 00:39:12.988983+00	2025-09-12 00:39:12.988983+00
-product-images	company-25	2025-10-25 20:14:14.017695+00	2025-10-25 20:14:14.017695+00
+COPY "storage"."objects" ("id", "bucket_id", "name", "owner", "created_at", "updated_at", "last_accessed_at", "metadata", "version", "owner_id", "user_metadata") FROM stdin;
+e8a1d1b4-00bf-48f0-b887-a8300870e132	product-images	company-24/837cec26-4f7e-47aa-bedc-feda02b115ed.jpg	027b9013-2b30-48bf-91d4-03f79fa74f6a	2025-09-11 23:30:53.898271+00	2025-09-11 23:30:53.898271+00	2025-09-11 23:30:53.898271+00	{"eTag": "\\"368c1123897acd18a662c3eaf5ce80f8\\"", "size": 5149, "mimetype": "image/jpeg", "cacheControl": "max-age=3600", "lastModified": "2025-09-11T23:30:54.000Z", "contentLength": 5149, "httpStatusCode": 200}	6710b12c-d398-41d8-9934-b39b33ebf7b0	027b9013-2b30-48bf-91d4-03f79fa74f6a	{}
+8e6ffd9a-051a-48a3-856d-849d99703e8c	product-images	company-25/2a81e7c3-9b9e-44d2-8da9-35303a2c2b3c.png	3d3ce7d8-785a-4927-a028-57e295784402	2025-10-25 20:14:14.017695+00	2025-10-25 20:14:14.017695+00	2025-10-25 20:14:14.017695+00	{"eTag": "\\"64e3690acbe3119a40d13b21e7c68afb\\"", "size": 125035, "mimetype": "image/png", "cacheControl": "max-age=3600", "lastModified": "2025-10-25T20:14:14.000Z", "contentLength": 125035, "httpStatusCode": 200}	3ff91f2a-d1dc-4b31-a2e8-af5ceeb697af	3d3ce7d8-785a-4927-a028-57e295784402	{}
+225ddf59-1486-411b-891b-09060ecf3a75	company-logos	company-1-1750902575044.png	bf9d20ea-6ceb-418b-98f8-cdbec80ba003	2025-06-26 01:49:36.22845+00	2025-08-26 14:54:36.002084+00	2025-06-26 01:49:36.22845+00	{"eTag": "\\"11b1c9c764fd4d7719ed7318b3bcee09\\"", "size": 4452, "mimetype": "image/png", "cacheControl": "max-age=3600", "lastModified": "2025-06-26T01:49:37.000Z", "contentLength": 4452, "httpStatusCode": 200}	348d91b6-0ad2-4680-ab39-88b8a53f369a	bf9d20ea-6ceb-418b-98f8-cdbec80ba003	{}
+9d8903db-4bd2-4581-a29a-1e6e0375c719	company-logos	company-1-1750904763836.png	bf9d20ea-6ceb-418b-98f8-cdbec80ba003	2025-06-26 02:26:05.077494+00	2025-08-26 14:54:36.002084+00	2025-06-26 02:26:05.077494+00	{"eTag": "\\"d099b0ec0d9477197407c05f2550281b\\"", "size": 9549, "mimetype": "image/png", "cacheControl": "max-age=3600", "lastModified": "2025-06-26T02:26:06.000Z", "contentLength": 9549, "httpStatusCode": 200}	6bf99dc0-798b-437e-ac9c-40efa6cbc47f	bf9d20ea-6ceb-418b-98f8-cdbec80ba003	{}
+97cb9042-417b-4e47-9d53-bac91863286f	platform-logos	platform-1750905232370.png	11cf6cb0-de2b-4e1c-a9df-b8cb1a9c1000	2025-06-26 02:33:53.698176+00	2025-08-26 14:54:36.002084+00	2025-06-26 02:33:53.698176+00	{"eTag": "\\"d099b0ec0d9477197407c05f2550281b\\"", "size": 9549, "mimetype": "image/png", "cacheControl": "max-age=3600", "lastModified": "2025-06-26T02:33:54.000Z", "contentLength": 9549, "httpStatusCode": 200}	c7119b7a-e964-4fc6-980d-f6280578b656	11cf6cb0-de2b-4e1c-a9df-b8cb1a9c1000	{}
+e4f94c79-4142-4550-975d-212548e87112	platform-logos	platform-1750905241380.png	11cf6cb0-de2b-4e1c-a9df-b8cb1a9c1000	2025-06-26 02:34:02.674599+00	2025-08-26 14:54:36.002084+00	2025-06-26 02:34:02.674599+00	{"eTag": "\\"d099b0ec0d9477197407c05f2550281b\\"", "size": 9549, "mimetype": "image/png", "cacheControl": "max-age=3600", "lastModified": "2025-06-26T02:34:03.000Z", "contentLength": 9549, "httpStatusCode": 200}	6a83aece-00c4-4dcf-b39d-1d159e41d065	11cf6cb0-de2b-4e1c-a9df-b8cb1a9c1000	{}
+83cbf025-1d25-4141-9d9a-312c17d02f2c	payment-receipts	24/28_1757637552732_logo-soul-glass.jpg	027b9013-2b30-48bf-91d4-03f79fa74f6a	2025-09-12 00:39:12.988983+00	2025-09-12 00:39:12.988983+00	2025-09-12 00:39:12.988983+00	{"eTag": "\\"368c1123897acd18a662c3eaf5ce80f8\\"", "size": 5149, "mimetype": "image/jpeg", "cacheControl": "max-age=3600", "lastModified": "2025-09-12T00:39:13.000Z", "contentLength": 5149, "httpStatusCode": 200}	9075d850-cbb2-41dc-a68d-1b2cf744b8ae	027b9013-2b30-48bf-91d4-03f79fa74f6a	{}
+66d016ea-65b5-4de6-8bb2-7a19e7e02194	product-images	company-24/675eae9f-d8f3-4ba9-904e-487f5ba452e1.jpg	027b9013-2b30-48bf-91d4-03f79fa74f6a	2025-09-12 00:55:28.472255+00	2025-09-12 00:55:28.472255+00	2025-09-12 00:55:28.472255+00	{"eTag": "\\"368c1123897acd18a662c3eaf5ce80f8\\"", "size": 5149, "mimetype": "image/jpeg", "cacheControl": "max-age=3600", "lastModified": "2025-09-12T00:55:29.000Z", "contentLength": 5149, "httpStatusCode": 200}	16a9eeab-80bf-4452-8782-0f63e8d10c30	027b9013-2b30-48bf-91d4-03f79fa74f6a	{}
+b3230c2f-5d46-4aa3-8f65-907c4fa8f72f	product-images	company-25/d73a0f78-fed1-4f27-8df2-3c3b9657018a.png	3d3ce7d8-785a-4927-a028-57e295784402	2025-10-25 20:27:04.904499+00	2025-10-25 20:27:04.904499+00	2025-10-25 20:27:04.904499+00	{"eTag": "\\"64e3690acbe3119a40d13b21e7c68afb\\"", "size": 125035, "mimetype": "image/png", "cacheControl": "max-age=3600", "lastModified": "2025-10-25T20:27:05.000Z", "contentLength": 125035, "httpStatusCode": 200}	348ed79b-b1f6-4292-a061-9aac2db38e28	3d3ce7d8-785a-4927-a028-57e295784402	{}
+10fa5a75-610c-45a1-8b60-ce47ca910484	platform-logos	platform-1757597080763.png	11cf6cb0-de2b-4e1c-a9df-b8cb1a9c1000	2025-09-11 13:24:41.058128+00	2025-09-11 13:24:41.058128+00	2025-09-11 13:24:41.058128+00	{"eTag": "\\"8b5b4cdd06a45fe72d4bb107013ffc39\\"", "size": 3588, "mimetype": "image/png", "cacheControl": "max-age=3600", "lastModified": "2025-09-11T13:24:42.000Z", "contentLength": 3588, "httpStatusCode": 200}	81800035-1877-417a-9ddc-30af258e8f27	11cf6cb0-de2b-4e1c-a9df-b8cb1a9c1000	{}
+126d91ba-fe5a-4473-8f83-d3971ab8ebcd	product-images	company-17/.emptyFolderPlaceholder	\N	2025-09-11 22:46:47.318949+00	2025-09-11 22:46:47.318949+00	2025-09-11 22:46:47.318949+00	{"eTag": "\\"d41d8cd98f00b204e9800998ecf8427e\\"", "size": 0, "mimetype": "application/octet-stream", "cacheControl": "max-age=3600", "lastModified": "2025-09-11T22:46:47.319Z", "contentLength": 0, "httpStatusCode": 200}	4c19895f-6759-4972-b118-f59b940a00fd	\N	{}
+5de27bdd-95e1-4c1a-9fb5-94d6ec7fbfc2	product-images	company-21/.emptyFolderPlaceholder	\N	2025-09-11 22:46:58.650271+00	2025-09-11 22:46:58.650271+00	2025-09-11 22:46:58.650271+00	{"eTag": "\\"d41d8cd98f00b204e9800998ecf8427e\\"", "size": 0, "mimetype": "application/octet-stream", "cacheControl": "max-age=3600", "lastModified": "2025-09-11T22:46:58.650Z", "contentLength": 0, "httpStatusCode": 200}	e7d4732c-0f67-44d1-b853-fc376706bc2a	\N	{}
+72b271db-c68e-4836-89a9-22cd55823dcf	product-images	company-23/.emptyFolderPlaceholder	\N	2025-09-11 22:47:09.078781+00	2025-09-11 22:47:09.078781+00	2025-09-11 22:47:09.078781+00	{"eTag": "\\"d41d8cd98f00b204e9800998ecf8427e\\"", "size": 0, "mimetype": "application/octet-stream", "cacheControl": "max-age=3600", "lastModified": "2025-09-11T22:47:09.079Z", "contentLength": 0, "httpStatusCode": 200}	57b9a386-ee42-4b1c-837f-804f7a8c88f2	\N	{}
+cb4e6af1-b194-4296-926e-cb164e48f80e	payment-receipts	17/.emptyFolderPlaceholder	\N	2025-09-11 22:47:38.161108+00	2025-09-11 22:47:38.161108+00	2025-09-11 22:47:38.161108+00	{"eTag": "\\"d41d8cd98f00b204e9800998ecf8427e\\"", "size": 0, "mimetype": "application/octet-stream", "cacheControl": "max-age=3600", "lastModified": "2025-09-11T22:47:38.160Z", "contentLength": 0, "httpStatusCode": 200}	55b577df-4cf8-4048-9363-8d4d3a2acb12	\N	{}
+ea16d045-3127-4475-a542-79c39fca777e	payment-receipts	9/.emptyFolderPlaceholder	\N	2025-09-11 22:48:00.919643+00	2025-09-11 22:48:00.919643+00	2025-09-11 22:48:00.919643+00	{"eTag": "\\"d41d8cd98f00b204e9800998ecf8427e\\"", "size": 0, "mimetype": "application/octet-stream", "cacheControl": "max-age=3600", "lastModified": "2025-09-11T22:48:00.919Z", "contentLength": 0, "httpStatusCode": 200}	0c60d738-3c19-4f7c-a15e-04d95ff7d14a	\N	{}
 \.
 
 
@@ -3580,7 +3572,7 @@ product-images	company-25	2025-10-25 20:14:14.017695+00	2025-10-25 20:14:14.0176
 -- Data for Name: s3_multipart_uploads; Type: TABLE DATA; Schema: storage; Owner: supabase_storage_admin
 --
 
-COPY "storage"."s3_multipart_uploads" ("id", "in_progress_size", "upload_signature", "bucket_id", "key", "version", "owner_id", "created_at", "user_metadata") FROM stdin;
+COPY "storage"."s3_multipart_uploads" ("id", "in_progress_size", "upload_signature", "bucket_id", "key", "version", "owner_id", "created_at", "user_metadata", "metadata") FROM stdin;
 \.
 
 
@@ -3589,6 +3581,14 @@ COPY "storage"."s3_multipart_uploads" ("id", "in_progress_size", "upload_signatu
 --
 
 COPY "storage"."s3_multipart_uploads_parts" ("id", "upload_id", "size", "part_number", "bucket_id", "key", "etag", "owner_id", "version", "created_at") FROM stdin;
+\.
+
+
+--
+-- Data for Name: vector_indexes; Type: TABLE DATA; Schema: storage; Owner: supabase_storage_admin
+--
+
+COPY "storage"."vector_indexes" ("id", "name", "bucket_id", "data_type", "dimension", "distance_metric", "metadata_configuration", "created_at", "updated_at") FROM stdin;
 \.
 
 
@@ -3890,6 +3890,6 @@ SELECT pg_catalog.setval('"public"."withdrawal_requests_id_seq"', 8, true);
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict uPhuiyYgFa9SKwmKcoL1XAg7dLatNj3pPl5HXLkSskIpFhHk1tQsLo1Gm7Bp9mM
+-- \unrestrict 8uzwNMuPm3qsO1Y4nZWDRuRu6P3Vv3dF9EvtD6ZFXWw2vw5uiYqq87Kah0LdAdn
 
 RESET ALL;
