@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict I3UDDbKCjsEUZdttlTgf7FOPackDeHW9osi2iXwKt8bXeUVYpbcGLLBgHOohSxN
+-- \restrict sfiXWjLsr8zE3nqKTU8Bg7b0vBqU42bAp6bp3rPsOuzVvDRcKWeP7ENpjiqze7L
 
 -- Dumped from database version 17.4
 -- Dumped by pg_dump version 17.11
@@ -3922,6 +3922,6 @@ SELECT pg_catalog.setval('"public"."withdrawal_requests_id_seq"', 8, true);
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict I3UDDbKCjsEUZdttlTgf7FOPackDeHW9osi2iXwKt8bXeUVYpbcGLLBgHOohSxN
+-- \unrestrict sfiXWjLsr8zE3nqKTU8Bg7b0vBqU42bAp6bp3rPsOuzVvDRcKWeP7ENpjiqze7L
 
 RESET ALL;
